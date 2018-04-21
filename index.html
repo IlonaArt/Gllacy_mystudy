@@ -33,12 +33,14 @@
 						</form>	
 					</li>	
 					<li class="enter-item">Вход
-						<form class="user-email" action="#" method="post">
+						<form class="user-email" name="autorization" action="#" method="post">
 							<label class="visually-hidden" for="email">Электронная почта</label>
 							<input id="email" type="email" placeholder="Электронная почта" required>
 							<label class="visually-hidden" for="password">Пароль</label>
 							<input id="password" type="password" placeholder="Пароль" required>
-							<button class="button-enter" type="submit" value="Войти">Войти</button>
+							<div class="button-red">
+								<button class="button-enter" type="submit" value="Войти">Войти</button>
+							</div>	
 							<a class="lost-password" href="#">Забыли пароль?</a>
 							<a class="new-registration" href="#">Новая регистрация</a>
 						</form>	
@@ -46,8 +48,8 @@
 					<li class="recycle-item">Пусто</li>
 				</ul>	
 				<div class="business-hours">
-					<p>С 10 до 20, ежедневно</p>
-					<b>8 812 450-25-25</b>
+					<p class="hours">С 10 до 20, ежедневно</p>
+					<b class="phone">8 812 450-25-25</b>
 				</div>
 			</header>	
 
@@ -117,18 +119,47 @@
 					<p class="about-main-features">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 					<ul class="main-features-list">
 						<li class="main-features-item">
-							<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+							<p class="main-features-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 						</li>	
 						<li class="main-features-item">
-							<p>Для приготовления мороженого используются настоящие сливки и мылоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+							<p class="main-features-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 						</li>
 						<li class="main-features-item">
-							<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+							<p class="main-features-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 						</li>	
 						<li class="main-features-item">
-							<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+							<p class="main-features-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 						</li>
 					</ul>	
+				</section>	
+				<article class="news-blog">
+					<h3 class="whatsnew">Новое в нашем блоге</h3>
+					<a class="news" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+				</article>
+				<div class="distribution">
+					<p class="subscribe">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+					<form class="subscribe-form" name="subscribe" action="#" method="post">
+						<label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+						<input type="email" id="subscribe-email" placeholder="Электронная почта">
+						<div class="button-red">
+							<button class="button-submit" type="submit" value="Отправить">Отправить</button>
+						</div>	
+					</form>	
+				</div>	
+				<section class="address-section">
+					<div class="map">
+						<img src="img/map2.jpg" width="1200" height="430" alt="Карта проезда">
+					</div>
+					<div class="address-column">
+						<p class="address-text">Адрес главного офиса<br>и офлайн-магазина:</p>
+						<b class="address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
+						<p class="address-text">Для заказов по телефону:</p>
+						<b class="phone">8 812 450-25-25</b>
+						<p class="address-text">(с 10 до 20 ежедневно)</p>
+						<div class="button-red">
+							<button class="button-feedback" type="button" value="Форма обратной связи">Форма обратной связи</button>
+						</div>
+					</div>	
 				</section>	
 			</main>	
 
@@ -168,6 +199,20 @@
 					<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</span>
 				</div>	
 			</footer>
+
+			<section class="modal modal-feedback">
+				<h4 class="visually-hidden">Форма обратной связи</h4>
+				<b class="feedback-text">Мы обязательно вам ответим!</b>
+				<form class="feedback-form" name="feedback" action="#" method="post">
+					<label class="visually-hidden" for="your-name">Имя</label>
+					<input class="feedback-name" id="your-name" type="text" placeholder="Как вас зовут?">
+					<label class="visually-hidden" for="your-email">Эл. почта</label>
+					<input class="feedback-name" id="your-email" type="email" placeholder="Ваша почта для ответа?">
+					<textarea class="visually-hidden" placeholder="Напишите что-нибудь...">Ваш комментарий</textarea>
+					<div class="button-red">
+						<button class="button-submit" type="submit" value="Отправить">"Отправить</button>
+					</div>	
+			</section>	 
 		</div>
 	</body>
 </html>

@@ -28,16 +28,16 @@
 				</ul>	
 				<ul class="forms">
 					<li class="visually-hidden search-item">Поиск
-						<form class="search" action="#" method="post">
+						<form class="search" action="#" method="get">
 							<input type="search" placeholder="Что ищем?">
 						</form>	
 					</li>	
-					<li class="enter-item">Вход
+					<li class="enter-item enter-icon">Вход
 						<form class="user-email" name="autorization" action="#" method="post">
 							<label class="visually-hidden" for="email">Электронная почта</label>
-							<input id="email" type="email" placeholder="Электронная почта" required>
+							<input class="enter-email" id="email" type="email" name="enter-email" placeholder="Электронная почта" required>
 							<label class="visually-hidden" for="password">Пароль</label>
-							<input id="password" type="password" placeholder="Пароль" required>
+							<input class="enter-password" id="password" type="password" name="password" placeholder="Пароль" required>
 							<div class="button-red">
 								<button class="button-enter" type="submit" value="Войти">Войти</button>
 							</div>	
@@ -45,7 +45,7 @@
 							<a class="new-registration" href="#">Новая регистрация</a>
 						</form>	
 					</li>	
-					<li class="recycle-item">Пусто</li>
+					<li class="recycle-item recycle-icon">Пусто</li>
 				</ul>	
 				<div class="business-hours">
 					<p class="hours">С 10 до 20, ежедневно</p>
@@ -61,7 +61,7 @@
 							<img src="img/1_creme-brulee.jpg" width="650" height="586" alt="Крем-брюле и пломбир с малиновым джемом">
 						</span>
 						<div class="button-red">
-							<a class="button-choose">Давайте оба!</a>
+							<a class="button-choose" href="#">Давайте оба!</a>
 						</div>	
 					</div>
 					<span class="visually-hidden">Листалка</span>
@@ -84,9 +84,11 @@
 					</div>	
 				</section>
 				<div class="teaser">
+					<h3 class="visually-hidden">Наши хиты</h3>
 					<ul class="teaser-list">
 						<li class="teaser-item">
 							<img src="img/hit_creamy-citrus.jpg" width="268" height="267" alt="хит1">
+							<b class="cost">310	&#8381;<span> /кг</span></b>
 							<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							<div class="button-red">
 								<a class="button-watch" href="#">Быстрый просмотр</a>
@@ -94,6 +96,7 @@
 						</li>
 						<li class="teaser-item">
 							<img src="img/hit_creamy-choc.jpg" width="268" height="267" alt="хит2">
+							<b class="cost">380	&#8381;<span> /кг</span></b>
 							<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 							<div class="button-red">
 								<a class="button-watch" href="#">Быстрый просмотр</a>
@@ -101,6 +104,7 @@
 						</li>
 						<li class="teaser-item">
 							<img src="img/hit_creamy-strawberry.jpg" width="268" height="267" alt="хит3">
+							<b class="cost">355	&#8381;<span> /кг</span></b>
 							<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							<div class="button-red">
 								<a class="button-watch" href="#">Быстрый просмотр</a>
@@ -108,6 +112,7 @@
 						</li>
 						<li class="teaser-item">
 							<img src="img/hit_creamy-caramel.jpg" width="268" height="267" alt="хит4">
+							<b class="cost">415	&#8381;<span> /кг</span></b>
 							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 							<div class="button-red">
 								<a class="button-watch" href="#">Быстрый просмотр</a>
@@ -116,6 +121,7 @@
 					</ul>
 				</div>
 				<section class="main-features">
+					<h4 class="visually-hidden">Преимущества</h4>
 					<p class="about-main-features">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 					<ul class="main-features-list">
 						<li class="main-features-item">
@@ -133,14 +139,14 @@
 					</ul>	
 				</section>	
 				<article class="news-blog">
-					<h3 class="whatsnew">Новое в нашем блоге</h3>
+					<h5 class="whatsnew">Новое в нашем блоге</h5>
 					<a class="news" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</article>
 				<div class="distribution">
 					<p class="subscribe">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form class="subscribe-form" name="subscribe" action="#" method="post">
 						<label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-						<input type="email" id="subscribe-email" placeholder="Электронная почта">
+						<input class="email" type="email" id="subscribe-email" name="email" placeholder="Электронная почта" required>
 						<div class="button-red">
 							<button class="button-submit" type="submit" value="Отправить">Отправить</button>
 						</div>	
@@ -148,7 +154,8 @@
 				</div>	
 				<section class="address-section">
 					<div class="map">
-						<img src="img/map2.jpg" width="1200" height="430" alt="Карта проезда">
+						<img src="img/map2.jpg" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная
+19/8, Санкт-Петербург">
 					</div>
 					<div class="address-column">
 						<p class="address-text">Адрес главного офиса<br>и офлайн-магазина:</p>
@@ -182,36 +189,38 @@
 						<span class="visually-hidden">ВК</span>
 					</li>	
 				</ul>	
-				<p class="about">
+				<div class="about">
 					<a class="suppliers" href="#">
 						<span class="suppliers-icon">Для поставщиков</span>
 					</a>
 					<a class="production" href="#">О производстве</a>
-				</p>	
-				<p class="documents">
+				</div>	
+				<div class="documents">
 					<a class="about-documents" href="#">Наши документы</a>
 					<a class="standarts" href="#">Экологические стандарты</a>
-				</p>	
+				</div>	
 				<div class="footer-copyright">
 					<a class="HTML-Academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
 						<span class="visually-hidden">HTML Academy</span>	
 					</a>	
-					<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</span>
+					<span class="made-in">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</span>
 				</div>	
 			</footer>
 
 			<section class="modal modal-feedback">
-				<h4 class="visually-hidden">Форма обратной связи</h4>
+				<p class="visually-hidden">Форма обратной связи</p>
 				<b class="feedback-text">Мы обязательно вам ответим!</b>
 				<form class="feedback-form" name="feedback" action="#" method="post">
 					<label class="visually-hidden" for="your-name">Имя</label>
-					<input class="feedback-name" id="your-name" type="text" placeholder="Как вас зовут?">
+					<input class="feedback-name" id="your-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required >
 					<label class="visually-hidden" for="your-email">Эл. почта</label>
-					<input class="feedback-name" id="your-email" type="email" placeholder="Ваша почта для ответа?">
-					<textarea class="visually-hidden" placeholder="Напишите что-нибудь...">Ваш комментарий</textarea>
+					<input class="feedback-name" id="your-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+					<textarea class="comments" rows="8" cols="50" placeholder="Напишите что-нибудь..."></textarea>
 					<div class="button-red">
-						<button class="button-submit" type="submit" value="Отправить">"Отправить</button>
+						<button class="button-submit" type="submit" value="Отправить">Отправить</button>
 					</div>	
+				</form>
+				<button class="modal-close" type="button">Закрыть</button>	
 			</section>	 
 		</div>
 	</body>

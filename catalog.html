@@ -113,7 +113,7 @@
 						</li>
 					</ul>	
 				</nav>	
-				<section>
+				<section class="forms-section">
 					<h2>Сливочное мороженое</h2>
 					<div class="sorting-column">					
 						<span class="icon-down visually-hidden">выбор из предложенного ниже</span>
@@ -129,7 +129,7 @@
 							</li>
 						</ul>	
 					</div>
-					<p class="cost">Цена: 100 руб. - 500 руб.</p>
+					<p class="sorting-cost">Цена: 100 руб. - 500 руб.</p>
 					<div class="range-controls">	
 						<div class="scale">
 							<div class="bar">
@@ -140,51 +140,172 @@
 						<div class="toggle-max">	
 						</div>
 					</div>
-					<form class="classification-form" name="classification" action="https://echo.htmlacademy.ru" method="get">
+					<form class="classification-form" name="classification" action="https://echo.htmlacademy.ru" method="post">
 						<div class="percents-column">
 						<p class="percents-text">Жирность:</p>
-							<p><input class="percents-item" name="percents" type="radio" value="0%">0%</p>
-							<p><input class="percents-item" name="percents" type="radio" value="till 10%">до 10%</p>
-							<p><input class="percents-item" name="percents" type="radio" value="till 30%">до 30%</p>
-							<p><input class="percents-item" name="percents" type="radio" value="up to 30%">выше 30%</p>
+						<ul class="percents-list">
+							<li class="percents-item">
+								<input class="percents-item visually-hidden" id="percent" name="percents" type="radio" value="0%">
+								<label for="percent">0%</label>
+							</li>
+							<li class="percents-item">
+								<input class="percents-item visually-hidden" id="percent10" name="percents" type="radio" value="till 10%">
+								<label for="percent10">до 10%</label>
+							</li>
+							<li class="percents-item">
+								<input class="percents-item visually-hidden" id="percent30" name="percents" type="radio" value="till 30%">
+								<label for="percent30">до 30%</label>
+							</li>
+							<li class="percents-item">
+								<input class="percents-item visually-hidden" id="percent-more" name="percents" type="radio" value="up to 30%">
+								<label for="percent-more">выше 30%</label>
+							</li>
+						</ul>	
 						</div>
 						<div class="stuff-column">	     						
 							<p class="stuff">Наполнители:</p>
 							<ul class="stuff-list">
 								<li class="stuff-list-item">
-									<input type="checkbox" checked>
-									<label>
+									<input class="visually-hidden" id="checkbox1" name="checkbox" type="checkbox" checked>
+									<label for="checkbox1">
 										шоколадные
 									</label>
 								</li>
 								<li class="stuff-list-item">
-									<input type="checkbox" checked>
-									<label>
+									<input class="visually-hidden" id="checkbox2" name="checkbox" type="checkbox" checked>
+									<label for="checkbox2">
 										сахарные присыпки
 									</label>
 								</li>
 								<li class="stuff-list-item">
-									<input type="checkbox">
-									<label>
+									<input class="visually-hidden" id="checkbox3" name="checkbox" type="checkbox">
+									<label for="checkbox3">
 										фрукты
 									</label>
 								</li>
 								<li class="stuff-list-item">
-									<input type="checkbox">
-									<label>
+									<input class="visually-hidden" id="checkbox4" name="checkbox" type="checkbox">
+									<label for="checkbox4">
 										сиропы
 									</label>
 								</li>
 								<li class="stuff-list-item">
-									<input type="checkbox">
-									<label>
+									<input class="visually-hidden" id="checkbox5" name="checkbox" type="checkbox">
+									<label for="checkbox5">
 										джемы
 									</label>
 								</li>	
-							</ul>	
+							</ul>
+							<div class="button-blue">
+								<button class="button-use" type="submit" value="Применить">Применить</button>		
+							</div>	
 						</div>		
 					</form>
 				</section>
+				<section class="delicious-section">
+					<ul class="first-row-list">
+						<li class="first-row-item">
+							<img src="img/hit_creamy-citrus.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+							<b class="cost">310	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>	
+						<li class="first-row-item">
+							<img src="img/hit_creamy-choc.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+							<b class="cost">380	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочно-кофейное с кусочками шоколада</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="first-row-item">
+							<img src="img/hit_creamy-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+							<b class="cost">355	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="first-row-item">
+							<img src="img/hit_creamy-caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+							<b class="cost">415	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="second-row-list">
+						<li class="second-row-item">
+							<img src="img/catalog/1_lingonberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+							<b class="cost">325	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное с брусничным джемом</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="second-row-item">
+							<img src="img/catalog/2_blueberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+							<b class="cost">410	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочно-черничное с цельными ягодами черники</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="second-row-item">
+							<img src="img/catalog/3_lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+							<b class="cost">375	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="second-row-item">
+							<img src="img/catalog/4_cream and choc.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+							<b class="cost">320	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное с шоколадной стружкой</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+					</ul>	
+					<ul class="third-row-list">
+						<li class="third-row-item">
+							<img src="img/catalog/1_vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+							<b class="cost">440	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочно-ванильное с кусочками шоколада</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="third-row-item">
+							<img src="img/catalog/2_mentol.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом"> 
+							<b class="cost">435	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное с ментоловым сиропом</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="third-row-item">
+							<img src="img/catalog/3_black choc.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+							<b class="cost">355	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное с кусочками черного шоколада</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+						<li class="third-row-item">
+							<img src="img/catalog/4_mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+							<b class="cost">420	&#8381;<span> /кг</span></b>
+							<a class="ice-cream-text" href="#">Сливочное с мятным сиропом</a>
+							<div class="button-red">
+								<a class="button-watch" href="#">Быстрый просмотр</a>
+							</div>
+						</li>
+					</ul>
+				</section>	
 			</main>	
 
 			<footer class="main-footer">

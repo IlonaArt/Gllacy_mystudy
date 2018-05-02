@@ -85,32 +85,32 @@ ul {
 	border-bottom: 1px solid #b0c0b7; 
 }
 
-.catalog:hover {
-	color: #000000;
-	border: 1px solid white;
-	border-radius: 30px;
-	background-color: #ffffff;
-	padding: 9px 13px 11px 13px;
-}
-
-.navigation-item:hover .catalog-list {
-	display: block;
-}
-
-.catalog-list {
-	display: none;
-}
-
-.enter-item,
-.recycle-item {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 600;
-}
-
 .search-image {
 	border-radius: 50%;
 	background-color: #b0c0b7;
+}
+
+.search {
+	display: none;
+}
+
+.search-image:hover .search {
+	display: block;
+	cursor: pointer;
+}
+
+.search-image:hover,
+.enter-wrap:hover,
+.recycle-wrap:hover {
+	cursor: pointer;
+}
+
+.enter-wrap:hover .user-email {
+	display: block;
+}
+
+.user-email {
+	display: none;
 }
 
 .user-text {
@@ -136,6 +136,86 @@ ul {
 .phone {
 	font-size: 22px;
 	line-height: 24px;
+}
+
+.phone-white {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.cost {
+	font-size: 45px;
+}
+
+.cost-other {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.ice-cream-text {
+	font-weight: 600;
+	border-bottom: 1px solid #b0c0b7;
+}
+
+.button-watch {
+	display: none;
+}
+
+.twitter-icon,
+.instagram-icon,
+.facebook-icon,
+.vk-icon {
+	border: 3px solid #c2cec7;
+	border-radius: 50%;
+}
+
+.suppliers {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 700;
+	border-bottom: 1px solid #b0c0b7;
+}
+
+.production,
+.about-documents,
+.standarts {
+	font-size: 13px;
+	line-height: 18px;
+	border-bottom: 1px solid #b0c0b7;
+}
+
+.made-in {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.made-in-underline {
+	text-decoration: underline;
+}
+
+       /* главная страница */
+
+.catalog:hover {
+	color: #000000;
+	border: 1px solid white;
+	border-radius: 30px;
+	background-color: #ffffff;
+	padding: 9px 13px 11px 13px;
+}
+
+.navigation-item:hover .catalog-list {
+	display: block;
+}
+
+.catalog-list {
+	display: none;
+}
+
+.enter-text,
+.recycle-text {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
 }
 
 .button-choose {
@@ -168,17 +248,18 @@ ul {
 	font-weight: 700;
 }
 
+.bonus1 {
+	background-image: url("../img/raspberry.jpg");
+	background-repeat: no-repeat;
+}
+
+.bonus2 {
+	background-image: url("../img/chocolate.jpg");
+	background-repeat: no-repeat;
+}
+
 .bonus-text {
 	font-size: 18px;
-	font-weight: 700;
-}
-
-.cost {
-	font-size: 45px;
-}
-
-.cost-other {
-	font-size: 24px;
 	font-weight: 700;
 }
 
@@ -186,9 +267,18 @@ ul {
 	border-radius: 50%;
 }
 
-.ice-cream-text {
-	font-weight: 600;
-	border-bottom: 1px solid #b0c0b7;
+.teaser-item:hover {
+	cursor: pointer;
+	background-color: #9cb0a4;
+}
+
+.teaser-item:hover .button-watch {
+	display: block;
+}
+
+.main-features {
+	background-image: url("../img/waffle.jpg");
+	background-repeat: no-repeat;
 }
 
 .feedback-text {
@@ -222,8 +312,18 @@ ul {
 	text-decoration: underline;
 }
 
+.news-blog {
+	background-image: url("../img/newsblog.jpg");
+	background-repeat: no-repeat;
+}
+
 .subscribe {
 	color: #5a5a5a;
+}
+
+.distribution {
+	background-image: url("../img/post-bckgrd.jpg");
+	background-repeat: no-repeat;
 }
 
 .address-text {
@@ -239,33 +339,9 @@ ul {
 	color: #323232;
 }
 
-.phone-white {
-	font-size: 18px;
-	line-height: 24px;
-}
-
-.suppliers {
-	font-size: 13px;
-	line-height: 18px;
-	font-weight: 700;
-	border-bottom: 1px solid #b0c0b7;
-}
-
-.production,
-.about-documents,
-.standarts {
-	font-size: 13px;
-	line-height: 18px;
-	border-bottom: 1px solid #b0c0b7;
-}
-
-.made-in {
-	font-size: 12px;
-	line-height: 18px;
-}
-
-.made-in-underline {
-	text-decoration: underline;
+.address-column {
+	background-color: #fdfefe;
+	max-width: 302px;
 }
 
 .feedback,
@@ -275,13 +351,26 @@ ul {
 	color: #323232;
 }
 
+.modal-feedback {
+	display: none;
+	background-color: #f8f7f4;
+}
+
       /* внутренняя */
 
-.recycle-text {
+.recycle-text2 {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 600;
 	color: #323232;
+}
+
+.recycle-products {
+	display: none;
+}
+
+.recycle-wrap:hover .recycle-products {
+	display: block;
 }
 
 .recycle-products {
@@ -340,6 +429,10 @@ ul {
 	font-weight: 600;
 } 
 
+.button-use {
+	cursor: pointer;
+}
+
 .popular-list {
 	display: none;
 }
@@ -351,7 +444,25 @@ ul {
 
 .sorting-popular:hover .popular-list {
 	display: block;
+}
+
+.first-row-item img,
+.second-row-item img,
+.third-row-item img {
+	border-radius: 50%;
+}
+
+.first-row-item:hover,
+.second-row-item:hover,
+.third-row-item:hover {
 	cursor: pointer;
+	background-color: #9cb0a4;
+} 
+
+.first-row-item:hover .button-watch,
+.second-row-item:hover .button-watch,
+.third-row-item:hover .button-watch {
+	display: block;
 }
 
 .pagination .prev {

@@ -77,6 +77,15 @@ html {
 
 ul {
 	list-style: none;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
 }
 
 .navigation-item {
@@ -85,9 +94,11 @@ ul {
 	border-bottom: 1px solid #b0c0b7; 
 }
 
-.search-image {
+.search-background {
 	border-radius: 50%;
 	background-color: #b0c0b7;
+	width: 30px;
+	height: 30px;
 }
 
 .search {
@@ -97,6 +108,23 @@ ul {
 .search-image:hover .search {
 	display: block;
 	cursor: pointer;
+}
+
+.recycle-wrap {
+	background-color: #b0c0b7;
+	border-radius: 30px;
+	width: 116px;
+	padding-left: 16px;
+	padding-top: 5px;
+	padding-bottom: 6px;
+}
+
+.enter-background {
+	background-color: #b0c0b7;
+	border-radius: 30px;
+	width: 92px;
+	padding: 6px 16px 7px 16px;
+	height: 32px;
 }
 
 .search-image:hover,
@@ -197,10 +225,26 @@ ul {
 
 .catalog:hover {
 	color: #000000;
-	border: 1px solid white;
 	border-radius: 30px;
 	background-color: #ffffff;
-	padding: 9px 13px 11px 13px;
+	padding: 3px 11px 6px 11px;
+}
+
+.catalog:active {
+	box-shadow: 0 -2px 0 0 #696969;
+}
+
+.delivery:active,
+.company:active {
+	box-shadow: 0 -2px 0 0 #696969;
+}
+
+.delivery:hover,
+.company:hover {
+	color: #000000;
+	border-radius: 30px;
+	background-color: #ffffff;
+	padding: 3px 11px 6px 11px;
 }
 
 .navigation-item:hover .catalog-list {
@@ -209,6 +253,36 @@ ul {
 
 .catalog-list {
 	display: none;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	max-width: 144px;
+}
+
+.catalog-type-new {
+	font-weight: 700;
+	color: #323232;
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.catalog-type{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #323232;
+}
+
+.catalog-item {
+	padding-left: 20px;
+	padding-top: 12px;
+	padding-bottom: 13px;
+}
+
+.catalog-item:hover {
+	background-color: #fbded7;
+}
+
+.catalog-item:active {
+	background-color: #f6b5a5;
 }
 
 .enter-text,
@@ -369,7 +443,11 @@ ul {
 	display: none;
 }
 
-.recycle-wrap:hover .recycle-products {
+.inner-page .recycle-wrap {
+	background-color: #f7f6f3;
+}
+
+.big-recycle:hover .recycle-products {
 	display: block;
 }
 
@@ -394,6 +472,12 @@ ul {
 	font-size: 13px;
 	line-height: 16px;
 	color: #999999;
+}
+
+.catalog-current {
+	border-radius: 30px;
+	background-color: #d07058;
+	padding: 3px 11px 6px 11px;
 }
 
 .breadcrumbs-item {

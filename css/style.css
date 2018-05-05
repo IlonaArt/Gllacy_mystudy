@@ -49,12 +49,23 @@ a {
 .button-red{
 	color: #ffffff;
 	background-image: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	box-shadow: 0px 2px 0px 0px rgba(172, 16, 0, 0.64);
 	cursor: pointer;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
 	border: none;
+	border-radius: 25px;
+	padding: 10px 27px;
+}
+
+.button-red:hover {
+	background-image: linear-gradient(to bottom, rgb(244, 133, 104) 0%, rgb(237,113,95) 100%);
+}
+
+.button-red:active {
+	background-image: linear-gradient(to bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	box-shadow: inset 0px 2px 0px 0px rgba(149, 39, 24, 0.64);
 }
 
 html {
@@ -101,11 +112,38 @@ h2 {
 	height: 30px;
 }
 
-.search {
-	display: none;
+.search-background:hover {
+	background-color: #f8f7f4;
 }
 
-.search-image:hover .search {
+.search-background:hover path {
+	fill: #000000;
+}
+
+.search-form {
+	display: none;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  	border-radius: 5px;
+  	max-width: 342px;
+  	padding: 20px 15px 20px 15px;
+  	margin-top: 5px;
+}
+
+.user-text {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999999;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+	padding-left: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.search-image:hover .search-form {
 	display: block;
 	cursor: pointer;
 }
@@ -127,24 +165,44 @@ h2 {
 	height: 32px;
 }
 
+.enter-background:hover path {
+	fill: #000000;
+}
+
 .search-image:hover,
 .enter-wrap:hover,
 .recycle-wrap:hover {
 	cursor: pointer;
 }
 
-.enter-wrap:hover .user-email {
+.enter-wrap:hover .user-email-wrap {
 	display: block;
 }
 
-.user-email {
-	display: none;
+.user-email-wrap {
+	display: none; 
 }
 
-.user-text {
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
+.user-email {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  	border-radius: 5px;
+	max-width: 277px;
+	margin-top: 5px;
+	padding: 20px;
+}
+
+.email-wrap1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.user-text.enter-password {
+	margin-top: 20px;
 }
 
 .lost-password,
@@ -152,7 +210,7 @@ h2 {
 	font-size: 13px;
 	line-height: 24px;
 	color: #323232;
-	text-decoration: underline;
+	border-bottom: 1px solid #999999;
 }
 
 .hours {
@@ -253,9 +311,10 @@ h2 {
 
 .catalog-list {
 	display: none;
-	background-color: #f8f7f4;
 	border-radius: 5px;
 	max-width: 144px;
+	background-color: rgb(248, 247, 244);
+  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-type-new {
@@ -296,15 +355,34 @@ h2 {
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 700;
+	padding: 9px 42px;
+	border-radius: 30px;
+  	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .slider {
 	text-indent: -1000px;
-	border: none;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
-	background-image: none;
 	box-shadow: none;
+	background-color: #849d8f;
+	height: 21px;
+	width: 21px;
+	cursor: pointer;
+}
+
+.button2:hover,
+.button3:hover {
+	background-color: #b2c1b7;
+} 
+
+.button-current {
 	background-color: #ffffff;
+}
+
+.slider:active {
+	background-color: #ffffff;
+}
 }
 
 .free-bonus {

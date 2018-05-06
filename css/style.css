@@ -261,16 +261,21 @@ h2 {
 }
 
 .ice-cream-text {
+	display: block;
 	font-weight: 600;
-	border-bottom: 1px solid #b0c0b7;
 	max-width: 252px;
+	text-align: center;
+	margin-top: 5px;
+	text-decoration: underline;
+	text-decoration-color: #b0c0b7;
 }
 
 .button-watch {
 	display: none;
 	max-width: 202px;
-	text-align: center;
 	padding: 10px 12px;
+	margin-left: 30px;
+	margin-top: 16px;
 }
 
 .button-watch:hover {
@@ -430,6 +435,10 @@ h2 {
 .slider:active {
 	background-color: #ffffff;
 }
+
+.bonus-section {
+	display: flex;
+	justify-content: center;
 }
 
 .free-bonus {
@@ -447,9 +456,15 @@ h2 {
 	font-weight: 700;
 }
 
+.button-bonus1,
+.button-bonus2 {
+	padding: 10px 22px;
+}
+
 .bonus1 {
 	background-image: url("../img/raspberry.jpg");
 	background-repeat: no-repeat;
+	margin-right: 26px;
 }
 
 .bonus2 {
@@ -457,9 +472,23 @@ h2 {
 	background-repeat: no-repeat;
 }
 
+.bonuses {
+	display: flex;
+	flex-direction: column;
+	max-width: 562px;
+	border-radius: 20px;
+	padding: 18px 22px 30px 18px;
+}
+
+.bonus-wrap {
+	margin-left: auto;
+	margin-top: 44px;
+}
+
 .bonus-text {
 	font-size: 18px;
 	font-weight: 700;
+	margin-top: 18px;
 }
 
 .teaser-list {
@@ -486,7 +515,7 @@ h2 {
 	background-image: url("../img/hit.svg");
 	border-radius: 50%;
 	z-index: 2;
-	left: 28px;
+	left: 15px;
 }
 
 .teaser-item:hover {
@@ -497,6 +526,7 @@ h2 {
 
 .teaser-item:hover .button-watch {
 	display: block;
+	text-align: center;
 }
 
 .cost-wrapper {
@@ -507,6 +537,12 @@ h2 {
 .main-features {
 	background-image: url("../img/waffle.jpg");
 	background-repeat: no-repeat;
+	max-width: 100%;
+	max-width: 1150px;
+	background-color: #e9d9b9;
+	border-radius: 15px;
+	padding: 25px 22px 26px 22px;
+	margin: 0 auto;
 }
 
 .feedback-text {
@@ -523,8 +559,64 @@ h2 {
 	color: #323232;
 }
 
+.main-features-item {
+	max-width: 540px;
+	position: relative;
+}
+
+.main-features-wrap1,
+.main-features-wrap2 {
+	display: flex;
+	margin-top: 20px;
+}
+
 .main-features-text {
 	color: #323232;
+	padding-left: 58px;
+}
+
+.feature1::before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/ice-cream.svg");
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	top: -12px;
+}
+
+.feature2::before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/cow.svg");
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	top: -12px;
+}
+
+.feature3::before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/leaf.svg");
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	top: -10px;
+}
+
+.feature4::before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/termopac.svg");
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	top: -10px;
 }
 
 .whatsnew {

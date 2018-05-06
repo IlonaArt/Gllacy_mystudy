@@ -46,6 +46,18 @@ a {
 	cursor: pointer;
 }
 
+a.whiteref:hover,
+a.whiteref:active {
+	color: #ffbc9e;
+	text-decoration-color: #a7a294;
+}
+
+a.blackref:hover,
+a.blackref:active {
+	color: #e84d37;
+	text-decoration-color: #ffbc9e;
+}
+
 .wrapper {
 	width: 1200px;
 }
@@ -61,6 +73,7 @@ a {
 	border: none;
 	border-radius: 25px;
 	padding: 10px 27px;
+	outline: none;
 }
 
 .button-red:hover {
@@ -150,9 +163,23 @@ h2 {
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
 	padding-left: 14px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	width: 100%;
+}
+
+.user-text:hover {
+	border: 2px solid #999999;
+} 
+
+.user-text:focus {
+	outline: none;
+	border: 2px solid #8fbdec;
+	border-radius: 5px;
+}
+
+.user-text:focus::placeholder {
+	font-size: 0;
 }
 
 .search-image:hover .search-form {
@@ -476,19 +503,23 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	max-width: 562px;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding: 18px 22px 30px 18px;
 }
 
 .bonus-wrap {
 	margin-left: auto;
-	margin-top: 44px;
+	margin-top: 50px;
 }
 
 .bonus-text {
 	font-size: 18px;
 	font-weight: 700;
 	margin-top: 18px;
+}
+
+.teaser {
+	margin-bottom: 20px;
 }
 
 .teaser-list {
@@ -537,7 +568,6 @@ h2 {
 .main-features {
 	background-image: url("../img/waffle.jpg");
 	background-repeat: no-repeat;
-	max-width: 100%;
 	max-width: 1150px;
 	background-color: #e9d9b9;
 	border-radius: 15px;
@@ -619,9 +649,16 @@ h2 {
 	top: -10px;
 }
 
+.subscribe-column {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
 .whatsnew {
 	font-weight: 600;
 	color: #323232;
+	display: block;
 }
 
 .news {
@@ -630,11 +667,21 @@ h2 {
 	font-weight: 700;
 	color: #323232;
 	text-decoration: underline;
+	text-decoration-color: #323232;
+	max-width: 282px;
+	display: inline-block;
+	margin-top: 5px;
 }
 
 .news-blog {
 	background-image: url("../img/newsblog.jpg");
+	background-color: #ffffff;
 	background-repeat: no-repeat;
+	max-width: 562px;
+	border-radius: 15px;
+	margin-right: 26px;
+	padding: 15px 0 80px 20px;
+	flex-grow: 1;
 }
 
 .subscribe {
@@ -644,11 +691,15 @@ h2 {
 .subscribe-form {
 	display: flex;
 	max-width: 562px;
+	margin-top: 38px;
 }
 
 .distribution {
-	background-image: url("../img/post-bckgrd.jpg");
+	background: url("../img/post.jpg");
 	background-repeat: no-repeat;
+	max-width: 562px;
+	border-radius: 15px;
+	padding: 30px 24px 44px 24px;
 }
 
 .email {
@@ -656,14 +707,35 @@ h2 {
 }
 
 .button-submit {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.subscribe-wrap {
+	margin-left: 10px;
+}
+
+.address-section {
+	position: relative;
+	margin-top: 40px;
+}
+
+.map {
+	background-color: #e5ddc3;
 }
 
 .address-text {
 	font-size: 14px;
 	line-height: 20px;
 	color: #323232;
+}
+
+.address-text.orders {
+	margin-top: 16px;
+}
+
+.address-text.hours {
+	margin-top: 5px;
 }
 
 .address,
@@ -676,6 +748,16 @@ h2 {
 .address-column {
 	background-color: #fdfefe;
 	max-width: 302px;
+	border-radius: 15px;
+	padding: 32px 23px 30px 23px;
+	position: absolute;
+	right: 28px;
+	top: 63px;
+}
+
+.button-feedback {
+	padding: 10px 24px;
+	margin-top: 26px;
 }
 
 .feedback,

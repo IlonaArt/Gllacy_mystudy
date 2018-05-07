@@ -8,73 +8,75 @@
 	<body>
 		<div class="wrapper">
 			<header class="main-header">
-				<h1 class="visually-hidden">Онлайн-магазин мороженого "ГлэйсиШоп"</h1>
-				<div class="logo">
-					<img src="img/logo.png" width="154" height="64" alt="Логотип">
+				<div class="header-wrap">
+					<h1 class="visually-hidden">Онлайн-магазин мороженого "ГлэйсиШоп"</h1>
+					<div class="logo">
+						<img src="img/logo.png" width="154" height="64" alt="Логотип">
+					</div>	
+					<ul class="site-navigation">
+						<li class="navigation-item">
+							<a class="catalog" href="#">Каталог</a>
+							<ul class="catalog-list">
+								<li class="catalog-item new"><a class="catalog-type-new current" href="#">Новинки</a></li>
+								<li class="catalog-item"><a class="catalog-type current" href="catalog.html">Сливочное</a></li>
+								<li class="catalog-item"><a class="catalog-type current" href="#">Щербеты</a></li>
+								<li class="catalog-item"><a class="catalog-type current" href="#">Фруктовый лед</a></li>
+								<li class="catalog-item"><a class="catalog-type current" href="#">Мелорин</a></li>
+							</ul>	
+						</li>
+						<li class="navigation-item"><a class="delivery navigation-ref" href="#">Доставка и оплата</a></li>
+						<li class="navigation-item"><a class="company navigation-ref" href="#">О Компании</a></li>
+					</ul>	
+					<ul class="forms">
+						<li class="search-item">
+							<div class="search-image">
+								<div class="search-background">
+									<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+								</div>	
+								<div class="search-form">
+									<form class="search" action="#" method="get">
+										<label class="visually-hidden" for="idsearch">Поиск</label>
+										<input class="user-text" type="search" id="idsearch" placeholder="Что ищем?">
+									</form>	
+								</div>	
+							</div>						
+						</li>	
+						<li class="enter-item">
+							<div class="enter-wrap">
+								<div class="enter-background">
+									<svg class="enter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+									<span class="enter-text">Вход</span>
+								</div>	
+								<div class="user-email-wrap">						
+									<form class="user-email" name="autorization" action="https://echo.htmlacademy.ru" method="post">
+										<label class="visually-hidden" for="email">Электронная почта</label>
+										<input class="user-text enter-email" id="email" type="email" name="enter-email" placeholder="Электронная почта" required>
+										<label class="visually-hidden" for="password">Пароль</label>
+										<input class="user-text enter-password" id="password" type="password" name="password" placeholder="Пароль" required>
+										<div class="email-wrap1">
+											<div class="button-wrap">
+												<button class="button-red button-enter" type="submit" value="Войти">Войти</button>
+											</div>
+											<div class="email-wrap2">	
+												<a class="lost-password blackref" href="#">Забыли пароль?</a><br>
+												<a class="new-registration blackref" href="#">Новая регистрация</a>
+											</div>
+										</div>		
+									</form>	
+								</div>	
+							</div>							
+						</li>	
+						<li class="recycle-item">
+							<div class="recycle-wrap">
+								<svg class="recycle-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+								<span class="recycle-text">Пусто</span>							
+							</div>	
+						</li>	
+					</ul>	
 				</div>	
-				<ul class="site-navigation">
-					<li class="navigation-item">
-						<a class="catalog" href="#">Каталог</a>
-						<ul class="catalog-list">
-							<li class="catalog-item new"><a class="catalog-type-new current" href="#">Новинки</a></li>
-							<li class="catalog-item"><a class="catalog-type current" href="catalog.html">Сливочное</a></li>
-							<li class="catalog-item"><a class="catalog-type current" href="#">Щербеты</a></li>
-							<li class="catalog-item"><a class="catalog-type current" href="#">Фруктовый лед</a></li>
-							<li class="catalog-item"><a class="catalog-type current" href="#">Мелорин</a></li>
-						</ul>	
-					</li>
-					<li class="navigation-item"><a class="delivery" href="#">Доставка и оплата</a></li>
-					<li class="navigation-item"><a class="company" href="#">О Компании</a></li>
-				</ul>	
-				<ul class="forms">
-					<li class="search-item">
-						<div class="search-image">
-							<div class="search-background">
-								<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-							</div>	
-							<div class="search-form">
-								<form class="search" action="#" method="get">
-									<label class="visually-hidden" for="idsearch">Поиск</label>
-									<input class="user-text" type="search" id="idsearch" placeholder="Что ищем?">
-								</form>	
-							</div>	
-						</div>						
-					</li>	
-					<li class="enter-item">
-						<div class="enter-wrap">
-							<div class="enter-background">
-								<svg class="enter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-								<span class="enter-text">Вход</span>
-							</div>	
-							<div class="user-email-wrap">						
-								<form class="user-email" name="autorization" action="https://echo.htmlacademy.ru" method="post">
-									<label class="visually-hidden" for="email">Электронная почта</label>
-									<input class="user-text enter-email" id="email" type="email" name="enter-email" placeholder="Электронная почта" required>
-									<label class="visually-hidden" for="password">Пароль</label>
-									<input class="user-text enter-password" id="password" type="password" name="password" placeholder="Пароль" required>
-									<div class="email-wrap1">
-										<div class="button-wrap">
-											<button class="button-red button-enter" type="submit" value="Войти">Войти</button>
-										</div>
-										<div class="email-wrap2">	
-											<a class="lost-password blackref" href="#">Забыли пароль?</a><br>
-											<a class="new-registration blackref" href="#">Новая регистрация</a>
-										</div>
-									</div>		
-								</form>	
-							</div>	
-						</div>							
-					</li>	
-					<li class="recycle-item">
-						<div class="recycle-wrap">
-							<svg class="recycle-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
-							<span class="recycle-text">Пусто</span>							
-						</div>	
-					</li>	
-				</ul>	
 				<div class="business-hours">
 					<p class="hours">С 10 до 20, ежедневно</p>
-					<b class="phone-white">8 812 450-25-25</b>
+					<b class="phone">8 812 450-25-25</b>
 				</div>
 			</header>	
 
@@ -240,18 +242,19 @@
 							<svg class="vk-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#FFF"><path d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.531a3.73 3.73 0 0 1-1.124 1.327c-.552.415-1.161.71-1.823.886s-1.501.264-2.519.264h-6.121V8.987h5.443c1.13 0 1.957.038 2.48.113a5.126 5.126 0 0 1 1.561.5c.533.27.929.632 1.189 1.087.26.455.392.975.392 1.558 0 .678-.179 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.559 2.179 1.13.537.571.807 1.325.807 2.261 0 .678-.138 1.283-.411 1.817z"/></g></svg>
 						</a>
 					</li>	
-				</ul>	
-				<div class="about">
-					<a class="suppliers whiteref" href="#">
-						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#FFF" d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/></svg>
-						<span class="suppliers-icon">Для поставщиков</span>
-					</a>
-					<a class="production whiteref" href="#">О производстве</a>
-				</div>	
-				<div class="documents">
-					<a class="about-documents whiteref" href="#">Наши документы</a>
-					<a class="standarts whiteref" href="#">Экологические стандарты</a>
-				</div>	
+				</ul>
+				<div class="about-column">
+					<div class="about">
+						<a class="suppliers whiteref" href="#">
+							<span class="suppliers-icon">Для поставщиков</span>
+						</a>
+						<a class="production whiteref" href="#">О производстве</a>
+					</div>	
+					<div class="documents">
+						<a class="about-documents whiteref" href="#">Наши документы</a>
+						<a class="standarts whiteref" href="#">Экологические стандарты</a>
+					</div>
+				</div>		
 				<div class="footer-copyright">
 					<a class="HTML-Academy-logo whiteref" href="https://htmlacademy.ru/intensive/htmlcss">
 						<svg width="108" height="40" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 38"><path d="M46.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21 10.21 0 0 0-1.9-.22c-1.1.01-2.27.35-2.27 1.45zM53.06 20.62a5.29 5.29 0 0 1 2.7.67v1.79a4.28 4.28 0 0 0-2.42-.73 2.89 2.89 0 1 0 0 5.76 5.26 5.26 0 0 0 2.55-.67v1.8a6.58 6.58 0 0 1-2.9.6 4.42 4.42 0 0 1-4.72-4.54 4.54 4.54 0 0 1 4.79-4.68zM65.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24 2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79 7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57 0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21 10.21 0 0 0-1.9-.22c-1.11.01-2.27.35-2.27 1.45zM76.67 16.85v12.76h-1.76v-1.39a4.07 4.07 0 0 1-3.35 1.62 4.62 4.62 0 0 1 0-9.22 4 4 0 0 1 3.15 1.37v-5.14h2zm-4.76 5.48a2.9 2.9 0 0 0 0 5.8 3 3 0 0 0 2.79-1.84v-2.13a3.06 3.06 0 0 0-2.79-1.83zM82.99 20.62c3.48 0 4.68 2.81 4.12 5.34h-6.58c.22 1.57 1.75 2.22 3.35 2.22a6.41 6.41 0 0 0 2.77-.62v1.68a7.5 7.5 0 0 1-3.14.6c-2.68 0-5-1.53-5-4.61a4.39 4.39 0 0 1 4.48-4.61zm.09 1.62a2.39 2.39 0 0 0-2.57 2.26h4.85a2.06 2.06 0 0 0-2.28-2.26zM89.1 29.61v-8.75h1.73v1.09a4 4 0 0 1 2.92-1.33 3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V24.2a1.67 1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V29.61h-2V24.2a1.67 1.67 0 0 0-1.73-1.84 3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM111.47 20.86h2l-4.1 9.93c-.95 2.28-2.19 3-3.52 3a5 5 0 0 1-1.15-.15v-1.66a3 3 0 0 0 .89.13c.95 0 1.66-.67 2.17-2l.18-.44-4.16-8.82h2.13l3 6.6zM40.66 1.53v5a4 4 0 0 1 2.83-1.2A3.41 3.41 0 0 1 47.1 8.9v5.41h-2V9.15a1.9 1.9 0 0 0-2-2.1 3.08 3.08 0 0 0-2.44 1.46v5.8h-2V1.53h2zM52.43 2.42v3.12h3.17v1.71h-3.17v4c0 1.15.53 1.53 1.66 1.53a4.71 4.71 0 0 0 1.77-.35v1.68a7.14 7.14 0 0 1-2.35.38 2.68 2.68 0 0 1-3-2.88V7.23h-1.6V5.52h1.57V2.88zM58.1 14.29V5.54h1.73v1.09a4 4 0 0 1 2.92-1.33 3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V8.88a1.67 1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V14.29h-2V8.88a1.67 1.67 0 0 0-1.73-1.84 3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM74.72 1.52h1.95v12.76h-1.95zM15.44.02h-.16L0 1.62v28l15.28 9.09 15.28-9.09v-28zm13.12 28.45l-13.28 7.9L2 28.47V16.99l13.22 7.87v1.43l-9.07-5.4v1.38l9.11 5.47v1.46l-9.1-5.42v1.38l9.11 5.47 9.19-5.5V19.22l4.1-2.45v11.67zm0-13.16l-3.65 2.14-1.68 1-8-4.76v1.38l6.84 4.07h-.06l-.15.09-1 .57-5.64-3.36v1.38l4.45 2.65-1.05.7-3.36-2v1.38l2.21 1.3-2.25 1.35-13.16-7.82 13.17-7.92zm0-1.39L15.21 6.05l-13.2 7.86V3.41l13.28-1.39 13.28 1.39v10.51z" fill="#fff"/></svg>

@@ -85,8 +85,10 @@
 					<p class="visually-hidden">Слайды с изображениями</p>
 					<div class="sliders">
 						<span class="first-kind">
-							<img src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и малиновый джем">
-						</span>					
+							<img class="icecream-image first" src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+							<img class="icecream-image second"	src="img/2_choco and lemon.png"	width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">	
+							<img class="icecream-image third" src="img/3_strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+						</span>	
 					</div>				
 				</div>
 				<div class="slider-wrap">
@@ -270,17 +272,20 @@
 				<p class="visually-hidden">Форма обратной связи</p>
 				<b class="feedback-text">Мы обязательно вам ответим!</b>
 				<form class="feedback-form" name="feedback" action="https://echo.htmlacademy.ru" method="post">
-					<label class="visually-hidden" for="your-name">Имя</label>
-					<input class="feedback" id="your-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required >
-					<label class="visually-hidden" for="your-email">Эл. почта</label>
-					<input class="feedback" id="your-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
-					<textarea class="feedback comments" rows="8" cols="50" placeholder="Напишите что-нибудь..."></textarea>
-					<div class="button-wrap">
+					<div class="feedback-wrap">
+						<label class="visually-hidden" for="your-name">Имя</label>
+						<input class="user-text feedback" id="your-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required >
+						<label class="visually-hidden" for="your-email">Эл. почта</label>
+						<input class="user-text feedback" id="your-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+						<textarea class="user-text comments" rows="6" cols="50" placeholder="Напишите что-нибудь..."></textarea>
+					</div>	
+					<div class="button-wrap feedback">
 						<button class="button-red button-submit" type="submit" value="Отправить">Отправить</button>
 					</div>	
 				</form>
 				<button class="modal-close" type="button">Закрыть</button>	
-			</section>	 
+			</section>	
+			<div class="modal-overlay"></div> 
 		</div>
 	</body>
 </html>

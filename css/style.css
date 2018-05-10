@@ -61,6 +61,7 @@ a.blackref:active {
 .wrapper {
 	width: 1200px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .button-red{
@@ -118,6 +119,13 @@ h2 {
 	margin: 0;
 }
 
+.main-header {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .header-wrap {
 	display: flex;
 	padding: 8px 25px 0 25px;
@@ -132,6 +140,10 @@ h2 {
 	display: flex;
 	margin-left: auto;
 	padding-top: 12px;
+}
+
+.logo {
+	margin-right: 10px;
 }
 
 .navigation-item {
@@ -176,13 +188,11 @@ h2 {
 .user-text {
 	font-size: 14px;
 	line-height: 24px;
-	color: #999999;
+	color: #323232;
 	background-color: #ffffff;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
-	padding-left: 14px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding: 8px 14px;
 	width: 100%;
 }
 
@@ -194,6 +204,7 @@ h2 {
 	outline: none;
 	border: 2px solid #8fbdec;
 	border-radius: 5px;
+	font-weight: 700;
 }
 
 .user-text:focus::placeholder {
@@ -247,10 +258,6 @@ h2 {
 
 .enter-background:hover {
 	color: #323232;
-}
-
-..enter-wrap {
-	position: relative;
 }
 
 .search-image:hover,
@@ -325,6 +332,16 @@ h2 {
 .phone {
 	font-size: 22px;
 	line-height: 24px;
+}
+
+.icecream-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.icecream-image.second,
+.icecream-image.third {
+	display: none;
 }
 
 .cost {
@@ -487,6 +504,7 @@ h2 {
   	margin-top: 12px;
   	position: absolute;
   	margin-left: 4px;
+  	left: -10px;
 }
 
 .catalog-type-new {
@@ -700,13 +718,6 @@ h2 {
 	margin: 0 auto;
 }
 
-.feedback-text {
-	color: #323232;
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 600;
-}
-
 .about-main-features {
 	font-size: 24px;
 	line-height: 30px;
@@ -886,21 +897,105 @@ h2 {
 	top: 63px;
 }
 
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	background: rgba(132,157,143,0.3);
+	z-index: 1;
+}
+
 .button-feedback {
 	padding: 10px 24px;
 	margin-top: 26px;
 }
 
-.feedback,
+.user-text.feedback,
 .email {
-	font: inherit;
-	line-height: 24px;
+	font-size: 16px;
+}
+
+.comments {
+	resize: none;
+	font-family: Roboto;
+	font-size: 16px;
+	overflow: auto;
+}
+
+.feedback-text {
 	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 600;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback-wrap {
+	padding: 24px 0;
+}
+
+.user-text.feedback {
+	width: 268px;
+	margin-bottom: 20px;
+}
+
+.button-wrap.feedback {
+	margin-left: auto;
 }
 
 .modal-feedback {
+	position: fixed;
 	display: none;
 	background-color: #f8f7f4;
+	background-image: url("../img/pattern-light.jpg");
+	background-repeat: repeat;
+	background-position: 0 0;
+	border-radius: 10px;
+	width: 477px;
+	padding: 20px 25px 25px;
+
+	top: 338px;
+	right: 33%;
+	z-index: 2;
+}
+
+.modal-close {
+	position: absolute;
+	height: 22px;
+	width: 22px;
+	font-size: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: #f8f7f4;
+
+	top: 16px;
+	right: 16px;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 2px;
+	background-color: #323232;
+	right: -2px;
+    top: 10px;
+} 
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
 }
 
       /* внутренняя */

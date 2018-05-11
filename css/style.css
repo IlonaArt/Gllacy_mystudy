@@ -899,12 +899,13 @@ h2 {
 
 .modal-overlay {
 	position: fixed;
+	display: block;
 	top: 0;
 	left: 0;
 
 	width: 100%;
 	height: 100%;
-	background: rgba(132,157,143,0.3);
+	background: rgba(0,0,0,0.3);
 	z-index: 1;
 }
 
@@ -998,17 +999,61 @@ h2 {
 	transform: rotate(-45deg);
 }
 
-      /* внутренняя */
+                                           /* внутренняя */
+
+.recycle-item {
+	position: relative;
+}
 
 .recycle-text2 {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 600;
 	color: #323232;
+	padding-left: 5px;
 }
 
 .recycle-products {
 	display: none;
+	position: absolute;
+	right: 0;
+	width: 542px;
+	margin-top: 5px;
+	padding: 20px 16px 20px 35px;
+	background-color: #f8f7f4;
+	background-image: url("../img/pattern-light.jpg");
+	border-radius: 5px;
+}
+
+.modal-close-table {
+	position: absolute;
+	height: 14px;
+	width: 14px;
+	font-size: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: #f8f7f4;
+	top: 32px;
+	left: 18px;
+}
+
+.modal-close-table.image1::before,
+.modal-close-table.image1::after {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 2px;
+	background-color: #323232;
+	right: 0;
+	top: 5px;
+}
+
+.modal-close-table.image1::before {
+	transform: rotate(45deg);
+}
+
+.modal-close-table.image1::after{
+	transform: rotate(-45deg);
 }
 
 .inner-page .recycle-wrap {
@@ -1019,21 +1064,39 @@ h2 {
 	display: block;
 }
 
-.recycle-products {
-	background-color: #f8f7f4;
-}
-
 .recycle-cost {
 	font-size: 15px;
 	line-height: 18px;
 	color: #323232;
 } 
 
+.recycle-table {
+	padding-bottom: 12px;
+	border-bottom: 1px solid #cacac7;
+}
+
+.table-image {
+	border-radius: 50%;
+	max-width: 33px;
+}
+
 .product-text,
 .product-cost {
 	font-size: 13px;
 	line-height: 16px;
 	color: #323232;
+}
+
+.product-text {
+	width: 218px;
+}
+
+.product-cost.kg {
+	width: 100px;
+}
+
+.product-cost.common {
+	width: 52px;
 }
 
 .grey {

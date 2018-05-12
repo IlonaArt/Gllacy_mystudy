@@ -1019,10 +1019,20 @@ h2 {
 	right: 0;
 	width: 542px;
 	margin-top: 5px;
-	padding: 20px 16px 20px 35px;
+	padding: 16px 16px 20px 16px;
 	background-color: #f8f7f4;
 	background-image: url("../img/pattern-light.jpg");
 	border-radius: 5px;
+}
+
+.first-product {
+	position: relative;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.second-product {
+	display: flex;
 }
 
 .modal-close-table {
@@ -1032,9 +1042,17 @@ h2 {
 	font-size: 0;
 	border: 0;
 	cursor: pointer;
-	background-color: #f8f7f4;
-	top: 32px;
-	left: 18px;
+	background-color: transparent;
+}
+
+.modal-close-table.image1 {
+	top: 10px;
+	left: -22px;
+}
+
+.modal-close-table.image2 {
+	top: 80px;
+	left: 12px;
 }
 
 .modal-close-table.image1::before,
@@ -1042,7 +1060,7 @@ h2 {
 	position: absolute;
 	content: "";
 	width: 12px;
-	height: 2px;
+	height: 1px;
 	background-color: #323232;
 	right: 0;
 	top: 5px;
@@ -1052,9 +1070,28 @@ h2 {
 	transform: rotate(45deg);
 }
 
-.modal-close-table.image1::after{
+.modal-close-table.image1::after {
 	transform: rotate(-45deg);
 }
+
+.modal-close-table.image2::before,
+.modal-close-table.image2::after {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 1px;
+	background-color: #323232;
+	right: 0;
+	top: 5px;
+}
+
+.modal-close-table.image2::before {
+	transform: rotate(45deg);
+}
+
+.modal-close-table.image2::after {
+	transform: rotate(-45deg);
+} 
 
 .inner-page .recycle-wrap {
 	background-color: #f7f6f3;
@@ -1071,6 +1108,7 @@ h2 {
 } 
 
 .recycle-table {
+	padding-left: 14px;
 	padding-bottom: 12px;
 	border-bottom: 1px solid #cacac7;
 }

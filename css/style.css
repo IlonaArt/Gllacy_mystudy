@@ -1047,7 +1047,7 @@ h2 {
 
 .modal-close-table.image1 {
 	top: 10px;
-	left: -22px;
+	left: -20px;
 }
 
 .modal-close-table.image2 {
@@ -1091,7 +1091,23 @@ h2 {
 
 .modal-close-table.image2::after {
 	transform: rotate(-45deg);
+}
+
+.table-text {
+	margin-top: 7px;
 } 
+
+.table-text.one {
+	margin-right: 30px;
+} 
+
+.table-text.two {
+	margin-right: 27px;
+}
+
+.table-text.three {
+	margin-right: 10px;
+}
 
 .inner-page .recycle-wrap {
 	background-color: #f7f6f3;
@@ -1116,6 +1132,7 @@ h2 {
 .table-image {
 	border-radius: 50%;
 	max-width: 33px;
+	margin-right: 12px;
 }
 
 .product-text,

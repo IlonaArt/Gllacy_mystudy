@@ -899,7 +899,7 @@ h2 {
 
 .modal-overlay {
 	position: fixed;
-	display: block;
+	display: none;
 	top: 0;
 	left: 0;
 
@@ -1019,10 +1019,12 @@ h2 {
 	right: 0;
 	width: 542px;
 	margin-top: 5px;
-	padding: 16px 16px 20px 16px;
+	padding: 16px 16px 30px 16px;
 	background-color: #f8f7f4;
 	background-image: url("../img/pattern-light.jpg");
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .first-product {
@@ -1135,6 +1137,66 @@ h2 {
 	margin-right: 12px;
 }
 
+.order-wrap {
+	display: flex;
+	margin-left: auto;
+	align-items: flex-end;
+	flex-direction: column;
+	max-width: 200px;
+	padding-top: 14px;
+}
+
+.button-order {
+	padding: 10px 13px;
+}
+
+.button-wrap.order {
+	margin-top: 24px;
+}
+
+.hours-wrap {
+	margin-left: auto;
+	text-align: right;
+	padding-right: 25px;
+}
+
+nav.breadcrumbs {
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+}
+
+.breadcrumbs-wrap {
+	display: flex;
+}
+
+.breadcrumbs-list {
+	display: flex;
+}
+
+.breadcrumbs-item .breadcrumbs.one,
+ .breadcrumbs-item .breadcrumbs.two {
+	text-decoration: underline;
+	text-decoration-color: #b0c0b7;
+}
+
+.breadcrumbs-item {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.breadcrumbs-item .breadcrumbs {
+	padding-right: 5px;
+}
+
+.crumbs {
+	padding-right: 5px;
+}
+
+.caption-inner {
+
+}
+
 .product-text,
 .product-cost {
 	font-size: 13px;
@@ -1166,20 +1228,13 @@ h2 {
 	padding: 3px 11px 6px 11px;
 }
 
-.breadcrumbs-item {
-	font-size: 14px;
-	line-height: 16px;
-}
-
-.breadcrumbs1,
-.breadcrumbs2 {
-	border-bottom: 1px solid #b0c0b7;
-}
-
 .inner-page h2 {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
+
+	padding-bottom: 30px;
+	padding-left: 25px;
 }
 
 .sorting-text,
@@ -1245,4 +1300,8 @@ h2 {
 	text-indent: -1000px;
 	background-image: url("../img/catalog/icon-right-small.svg");
 	background-repeat: no-repeat;
+}
+
+.inner-page .main-footer {
+	border-top: 1px solid #b0c0b7;
 }

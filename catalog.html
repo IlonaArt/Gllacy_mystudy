@@ -147,95 +147,112 @@
 			<main class="container">				
 				<section class="forms-section">
 					<h2>Сливочное мороженое</h2>
-					<div class="sorting-column">					
-						<span class="icon-down visually-hidden">выбор из предложенного ниже</span>
-						<p class="sorting-text">Сортировка:</p>
-						<ul class="sorting-list">
-							<li class="sorting-list-item">
-								<span class="sorting-popular sorting-icon">по популярности
-									<ul class="popular-list">
-										<li><a class="popular-blue" href="#">по популярности</a></li>
-										<li><a class="popular-text" href="#">сначала недорогие</a></li>
-										<li><a class="popular-text" href="#">сначала дорогие</a></li>
-										<li><a class="popular-text" href="#">по жирности</a></li>
-									</ul>
-								</span>		
-							</li>
-						</ul>	
-					</div>
-					<p class="sorting-cost">Цена: 100 руб. - 500 руб.</p>
-					<div class="range-controls">	
-						<div class="scale">
-							<div class="bar">
-							</div>	
-						</div>
-						<div class="toggle-min">
-						</div>
-						<div class="toggle-max">	
-						</div>
-					</div>
 					<form class="classification-form" name="classification" action="https://echo.htmlacademy.ru" method="post">
-						<div class="percents-column">
-						<p class="percents-text">Жирность:</p>
-						<ul class="percents-list">
-							<li class="percents-item">
-								<input class="percents-item visually-hidden" id="percent" name="percents" type="radio" value="0%">
-								<label for="percent">0%</label>
-							</li>
-							<li class="percents-item">
-								<input class="percents-item visually-hidden" id="percent10" name="percents" type="radio" value="till 10%">
-								<label for="percent10">до 10%</label>
-							</li>
-							<li class="percents-item">
-								<input class="percents-item visually-hidden" id="percent30" name="percents" type="radio" value="till 30%">
-								<label for="percent30">до 30%</label>
-							</li>
-							<li class="percents-item">
-								<input class="percents-item visually-hidden" id="percent-more" name="percents" type="radio" value="up to 30%">
-								<label for="percent-more">выше 30%</label>
-							</li>
-						</ul>	
-						</div>
+						<div class="forms-wrapper">
+							<div class="sorting-column">					 
+								<p class=" sorting-text">Сортировка:</p>
+								<ul class="sorting-list">
+									<li class="sorting-list-item">
+										<a class="sorting-popular" href="#">
+											<span class="sorting-popular-text">по популярности</span>
+											<span class="visually-hidden">выбор из предложенного ниже</span>
+											<svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#ffffff" d="M5.5 10L0 0h11"/></svg>
+										</a>		
+										<ul class="popular-list">
+											<li class="popular-list-item">
+												<a class="popular-text" href="#">по популярности</a>
+											</li>
+											<li class="popular-list-item">
+												<a class="popular-text" href="#">сначала недорогие</a>
+											</li>
+											<li class="popular-list-item">
+												<a class="popular-text" href="#">сначала дорогие</a>
+											</li>
+											<li class="popular-list-item">
+												<a class="popular-text" href="#">по жирности</a>
+											</li>
+										</ul>	
+									</li>
+								</ul>	
+							</div>
+							<div class="range-wrap">
+								<p class="sorting-cost">Цена: 100 руб. - 500 руб.</p>
+								<div class="range-controls">	
+									<div class="scale">
+										<div class="bar">
+										</div>	
+									</div>
+									<div class="toggle toggle-min">
+									</div>
+									<div class="toggle toggle-max">	
+									</div>
+								</div>
+							</div>						
+							<div class="percents-column">
+								<p class="percents-text">Жирность:</p>
+								<ul class="percents-list">
+									<li class="percents-item">
+										<input class="percents visually-hidden" id="percent-zero" name="percents" type="radio" value="0%">
+										<label class="percents-label" for="percent-zero">0%</label>
+									</li>
+									<li class="percents-item">
+										<input class="percents visually-hidden" id="percent10" name="percents" type="radio" value="till 10%" checked>
+										<label class="percents-label" for="percent10">до 10%</label>
+									</li>
+									<li class="percents-item">
+										<input class="percents visually-hidden" id="percent30" name="percents" type="radio" value="till 30%">
+										<label class="percents-label" for="percent30">до 30%</label>
+									</li>
+									<li class="percents-item">
+										<input class="percents visually-hidden" id="percent-more" name="percents" type="radio" value="up to 30%">
+										<label class="percents-label" for="percents-more">выше 30%</label>
+									</li>
+								</ul>	
+							</div>
+						</div>	
 						<div class="stuff-column">	     						
 							<p class="stuff">Наполнители:</p>
-							<ul class="stuff-list">
-								<li class="stuff-list-item">
-									<input class="visually-hidden" id="checkbox1" name="checkbox" type="checkbox" checked>
-									<label for="checkbox1">
-										шоколадные
-									</label>
-								</li>
-								<li class="stuff-list-item">
-									<input class="visually-hidden" id="checkbox2" name="checkbox" type="checkbox" checked>
-									<label for="checkbox2">
-										сахарные присыпки
-									</label>
-								</li>
-								<li class="stuff-list-item">
-									<input class="visually-hidden" id="checkbox3" name="checkbox" type="checkbox">
-									<label for="checkbox3">
-										фрукты
-									</label>
-								</li>
-								<li class="stuff-list-item">
-									<input class="visually-hidden" id="checkbox4" name="checkbox" type="checkbox">
-									<label for="checkbox4">
-										сиропы
-									</label>
-								</li>
-								<li class="stuff-list-item">
-									<input class="visually-hidden" id="checkbox5" name="checkbox" type="checkbox">
-									<label for="checkbox5">
-										джемы
-									</label>
-								</li>	
-							</ul>
-							<div class="button-blue">
-								<button class="button-use" type="submit" value="Применить">Применить</button>		
-							</div>	
+							<div class="stuff-wrap">
+								<ul class="stuff-list">
+									<li class="stuff-list-item">
+										<input class="visually-hidden" id="checkbox1" name="checkbox" type="checkbox" checked>
+										<label for="checkbox1">
+											шоколадные
+										</label>
+									</li>
+									<li class="stuff-list-item">
+										<input class="visually-hidden" id="checkbox2" name="checkbox" type="checkbox" checked>
+										<label for="checkbox2">
+											сахарные присыпки
+										</label>
+									</li>
+									<li class="stuff-list-item">
+										<input class="visually-hidden" id="checkbox3" name="checkbox" type="checkbox">
+										<label for="checkbox3">
+											фрукты
+										</label>
+									</li>
+									<li class="stuff-list-item">
+										<input class="visually-hidden" id="checkbox4" name="checkbox" type="checkbox">
+										<label for="checkbox4">
+											сиропы
+										</label>
+									</li>
+									<li class="stuff-list-item">
+										<input class="visually-hidden" id="checkbox5" name="checkbox" type="checkbox">
+										<label for="checkbox5">
+											джемы
+										</label>
+									</li>	
+								</ul>
+								<div class="button-blue">
+									<button class="button-use" type="submit" value="Применить">Применить</button>		
+								</div>
+							</div>		
 						</div>		
 					</form>
 				</section>
+
 				<section class="delicious-section">
 					<ul class="first-row-list">
 						<li class="first-row-item">

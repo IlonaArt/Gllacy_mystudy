@@ -347,6 +347,8 @@ h2 {
 
 .cost {
 	font-size: 45px;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+
 }
 
 .cost-other {
@@ -681,6 +683,11 @@ h2 {
 	position: absolute;
 	border-radius: 50%;
 	z-index: 1;
+	cursor: pointer;
+}
+
+.teaser-item .cost-wrapper {
+	z-index: 3;
 }
 
 .teaser-item::before {
@@ -700,10 +707,23 @@ h2 {
 	width: 294px;
 	height: 405px;
 	cursor: pointer;
-	background-color: #9cb0a4;
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	top: 0;
 	left: 0;
+	z-index: 10;
+}
+
+.teaser-item:hover img,
+.teaser-item:hover .ice-cream-text, 
+.teaser-item:hover .button-wrap {
+	z-index: 11;
+}
+
+.teaser-item:hover::before,
+.teaser-item:hover .cost-wrapper {
+	z-index: 12;
+	cursor: pointer;
 }
 
 .cost-wrapper {
@@ -1375,6 +1395,18 @@ nav.breadcrumbs {
 	right: 70px;
 }
 
+.range-controls .toggle-min:hover {
+	width: 22px;
+	height: 22px;
+	border: 9px solid #ffffff;
+}
+
+.range-controls .toggle-max:hover {
+	width: 22px;
+	height: 22px;
+	border: 9px solid #ffffff;
+}
+
 .percents-text {
 	margin-bottom: 6px;
 	margin-left: 17px;
@@ -1526,16 +1558,15 @@ input.checkbox:checked:disabled + label.stuff-label {
 	box-shadow: inset 0px 2px 1px 0px #6a6b6a;
 	color: #323232;
 	border: none;
-	outline: none;
 }
 
 .delicious-section {
 	margin-top: 34px;
-	margin-bottom: 6px;
 }
 
 .delicious-section img {
 	position: absolute;
+	cursor: pointer;
 }
 
 .delicious-section .ice-cream-text,
@@ -1593,11 +1624,31 @@ input.checkbox:checked:disabled + label.stuff-label {
 	width: 294px;
 	height: 405px;
 	cursor: pointer;
-	background-color: #9cb0a4;
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	top: 0;
 	left: 0;
+	z-index: 10;
 } 
+
+.first-row-item:hover .button-wrap,
+.second-row-item:hover .button-wrap,
+.third-row-item:hover .button-wrap, 
+.first-row-item:hover img, 
+.second-row-item:hover img,
+.third-row-item:hover img,
+.first-row-item:hover .ice-cream-text, 
+.second-row-item:hover .ice-cream-text, 
+.third-row-item:hover .ice-cream-text {
+	z-index: 11;
+}
+
+.first-row-item:hover .cost-wrapper,
+.second-row-item:hover .cost-wrapper,
+.third-row-item:hover .cost-wrapper {
+	z-index: 12;
+	cursor: pointer;
+}
 
 .teaser-item:hover .button-watch,
 .first-row-item:hover .button-watch,
@@ -1606,18 +1657,95 @@ input.checkbox:checked:disabled + label.stuff-label {
 	display: block;
 }
 
-.pagination .prev {
-	text-indent: -1000px;
-	background-image: url("../img/catalog/icon-left-small.svg");
-	background-repeat: no-repeat;
+.pagination {
+	max-width: 240px;
+	margin-left: auto;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	text-align: center;
+	line-height: 18px;
 }
 
-.pagination .next {
-	text-indent: -1000px;
-	background-image: url("../img/catalog/icon-right-small.svg");
+.pagination-item.current,
+.pagination-item.current:hover {
+	color: #323232;
+	background-color: #ffffff;
+	border-radius: 50%;
+	margin-left: 15px;
+}
+
+.pagination-item.next:hover,
+ .pagination-item.next:active {
+	background-color: transparent;
+}
+
+.pagination-item.fifth {
+	margin-right: 5px;
+}
+
+.pagination-item {
+	padding: 5px 9px;
+}
+
+.pagination-item:hover,
+.pagination-item:hover {
+	color: #ffffff;
+	background-color: #9db1a5;
+	border-radius: 50%;
+}
+
+.pagination-item:active {
+	color: #323232;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.pagination .prev {
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	bottom: -2px;
+}
+
+.pagination .prev::before {
+	position: absolute;
+	content: "";
+	background-image: url("../img/catalog/icon-left.svg");
 	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 8px;
+	height: 12px;
+	transform: rotate(180deg);
+} 
+
+.pagination .next {
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	bottom: 2px;
+}
+
+.pagination .next::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/catalog/icon-right.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 8px;
+	height: 12px;
 }
 
 .inner-page .main-footer {
 	border-top: 1px solid #b0c0b7;
+	margin: 0 10px;
+}
+
+.inner-page .social-list {
+	padding: 36px 0 30px 0;
+}
+
+.inner-page .footer-copyright {
+	padding-right: 0;
 }

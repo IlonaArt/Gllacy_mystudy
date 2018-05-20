@@ -96,25 +96,35 @@
 
 			<main class="container">
 				<div class="sliders-container">
-					<p class="visually-hidden">Слайды с изображениями</p>
-					<div class="sliders">
-						<span class="first-kind">
-							<img class="icecream-image first" src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-							<img class="icecream-image second"	src="img/2_choco and lemon.png"	width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">	
-							<img class="icecream-image third" src="img/3_strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
-						</span>	
-					</div>				
-				</div>
-				<div class="slider-wrap">
-					<div class="slider-buttons">
-						<span class="visually-hidden">Листалка</span>
-						<button class="slider button-current" type="button">1</button>
-						<button class="slider button2" type="button">2</button>
-						<button class="slider button3" type="button">3</button>
-					</div>
-					<div class="button-wrap">
-						<a class="button-red button-choose" href="#">Давайте оба!</a>
-					</div>	
+					<ul class="sliders">
+						<li class="slider-item">
+							<input class="visually-hidden" type="radio" id="slider1" name="slider" checked>
+							<label class="image first" for="slider1"></label>
+							<img class="icecream-image" src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">	
+							<p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>	
+							<div class="button-wrap">
+								<a class="button-red button-choose" href="#">Давайте оба!</a>
+							</div>						
+						</li>	
+						<li class="slider-item">
+							<input class="visually-hidden" type="radio" id="slider2" name="slider">
+							<label class="image second" for="slider2"></label>
+							<img class="icecream-image"	src="img/2_choco and lemon.png"	width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+							<p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+							<div class="button-wrap">
+								<a class="button-red button-choose" href="#">Давайте оба!</a>
+							</div>	
+						</li>
+						<li class="slider-item">
+							<input class="visually-hidden" type="radio" id="slider3" name="slider">
+							<label class="image third" for="slider3"></label>
+							<img class="icecream-image" src="img/3_strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+							<p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
+							<div class="button-wrap">
+								<a class="button-red button-choose" href="#">Давайте оба!</a>
+							</div>
+						</li>
+					</ul>			
 				</div>	
 				<section class="bonus-section">
 					<h2 class="visually-hidden">Бонусы при покупке</h2>

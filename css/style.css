@@ -579,8 +579,29 @@ h2 {
   	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
-.slider {
-	text-indent: -1000px;
+.slider-text {
+	position: absolute;
+	font-size: 60px;
+	line-height: 60.35px;
+	font-weight: 700;
+	width: 678px;
+	bottom: 370px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.slider-item {
+	position: relative;
+}
+
+label.image {
+	position: relative;
+}
+
+label.image::before {
+	position: absolute;
+	content: "";
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: none;
@@ -588,6 +609,13 @@ h2 {
 	height: 21px;
 	width: 21px;
 	cursor: pointer;
+}
+
+.sliders .button-wrap {
+	position: absolute;
+	bottom: 286px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .button2:hover,
@@ -603,15 +631,6 @@ h2 {
 	background-color: #ffffff;
 }
 
-.slider-wrap {
-	display: flex;
-	align-items: center;
-	padding-left: 27px;
-}
-
-.slider-buttons {
-	width: 82px;
-}
 
 .bonus-section {
 	display: flex;

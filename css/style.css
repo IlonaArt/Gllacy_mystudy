@@ -124,6 +124,7 @@ h2 {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 .header-wrap {
@@ -335,11 +336,6 @@ h2 {
 	line-height: 24px;
 }
 
-.icecream-image {
-	display: block;
-	margin: 0 auto;
-}
-
 .icecream-image.second,
 .icecream-image.third {
 	display: none;
@@ -457,6 +453,10 @@ h2 {
 
 .made-in-underline:hover {
 	color: #ffbc9e;
+}
+
+.HTML-Academy-logo:hover svg path {
+	fill: #ffbc9e;
 }
                                                    /* главная страница */
 
@@ -585,30 +585,47 @@ h2 {
 	line-height: 60.35px;
 	font-weight: 700;
 	width: 678px;
-	bottom: 370px;
+	bottom: 375px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
 }
 
-.slider-item {
+.sliders {
+	display: flex;
+	justify-content: center;
 	position: relative;
+	height: 585px;
+}
+
+.slider-item {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1045px;
 }
 
 label.image {
-	position: relative;
-}
-
-label.image::before {
 	position: absolute;
 	content: "";
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: none;
-	background-color: #849d8f;
 	height: 21px;
 	width: 21px;
 	cursor: pointer;
+	bottom: 295px;
+	left: -50px;
+	z-index: 100;
+}
+
+.slider-item.two label.image {
+	left: -20px;
+}
+
+.slider-item.three label.image {
+	left: 10px;
 }
 
 .sliders .button-wrap {
@@ -618,24 +635,48 @@ label.image::before {
 	transform: translateX(-50%);
 }
 
-.button2:hover,
-.button3:hover {
+.slider-item .button-choose:hover {
+	background-image: linear-gradient(to bottom, rgb(244, 133, 104) 0%, rgb(237,113,95) 100%);
+}
+
+.slider-item .button-choose:active {
+	background-image: linear-gradient(to bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: inset 0px 2px 0px 0px rgba(149, 39, 24, 0.64);
+}
+
+label.image:hover {
 	background-color: #b2c1b7;
 } 
 
-.button-current {
+input.slider-radio:checked + label.image {
 	background-color: #ffffff;
 }
 
-.slider:active {
+label.image:active {
 	background-color: #ffffff;
+} 
+
+.sliders img,
+.sliders .slider-text,
+.sliders .button-wrap {
+	opacity: 0;
+	visibility: hidden;
 }
 
+.sliders .slider-item input:checked ~ img,
+.sliders .slider-item input:checked ~ .slider-text, 
+.sliders .slider-item input:checked ~ .button-wrap {
+	opacity: 1;
+	visibility: visible;
+	z-index: 10;
+}
 
 .bonus-section {
+	position: relative;
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 65px;
+	z-index: 10;
 }
 
 .free-bonus {
@@ -1093,6 +1134,7 @@ label.image::before {
 	border: 0;
 	cursor: pointer;
 	background-color: transparent;
+	outline: none;
 }
 
 .modal-close-table.image1 {
@@ -1565,6 +1607,7 @@ input.checkbox:checked:disabled + label.stuff-label {
 	color: #ffffff;
 	background-color: #a6b7ae;
 	padding: 8px 24px;
+	outline: none;
 }
 
 .button-use:hover {

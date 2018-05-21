@@ -189,7 +189,7 @@ h2 {
 .user-text {
 	font-size: 14px;
 	line-height: 24px;
-	color: #323232;
+	color: #999999;
 	background-color: #ffffff;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
@@ -199,6 +199,8 @@ h2 {
 
 .user-text:hover {
 	border: 2px solid #999999;
+	margin: -1px;
+	margin-bottom: -1px;
 } 
 
 .user-text:focus {
@@ -206,6 +208,7 @@ h2 {
 	border: 2px solid #8fbdec;
 	border-radius: 5px;
 	font-weight: 700;
+	color: #323232;
 }
 
 .user-text:focus::placeholder {
@@ -305,8 +308,13 @@ h2 {
 	margin-top: 20px;
 }
 
+.user-text.enter-password:hover {
+	margin-top: 19px;
+}
+
 .button-enter {
-	padding: 13px 27px;
+	padding: 12px 27px;
+	border-radius: 22px;
 }
 
 .lost-password,
@@ -794,7 +802,7 @@ label.image:active {
 .main-features {
 	background-image: url("../img/waffle.jpg");
 	background-repeat: no-repeat;
-	max-width: 1150px;
+	max-width: 1148px;
 	background-color: #e9d9b9;
 	border-radius: 15px;
 	padding: 25px 22px 26px 22px;
@@ -875,8 +883,8 @@ label.image:active {
 
 .subscribe-column {
 	display: flex;
-	justify-content: center;
 	margin-top: 40px;
+	margin-left: 25px;
 }
 
 .whatsnew {
@@ -902,15 +910,15 @@ label.image:active {
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	max-width: 560px;
-	margin-right: 26px;
+	margin-right: 28px;
 	padding: 15px 0 80px 20px;
 	flex-grow: 1;
 }
 
 .news-blog,
 .distribution {
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
@@ -921,6 +929,7 @@ label.image:active {
 
 .subscribe-form {
 	display: flex;
+	justify-content: space-between;
 	max-width: 562px;
 	margin-top: 38px;
 }
@@ -1035,6 +1044,10 @@ label.image:active {
 	margin-bottom: 20px;
 }
 
+.user-text.feedback:hover {
+	margin-bottom: 19px;
+}
+
 .button-wrap.feedback {
 	margin-left: auto;
 }
@@ -1051,8 +1064,9 @@ label.image:active {
 	padding: 20px 25px 25px;
 
 	top: 338px;
-	right: 33%;
-	z-index: 2;
+	left: 50%;
+    transform: translateX(-50%);
+	z-index: 101;
 }
 
 .modal-close {
@@ -1063,6 +1077,7 @@ label.image:active {
 	border: 0;
 	cursor: pointer;
 	background-color: #f8f7f4;
+	outline: none;
 
 	top: 16px;
 	right: 16px;
@@ -1389,6 +1404,15 @@ nav.breadcrumbs {
 
 .sorting-list-item:hover .popular-list {
 	display: block;
+}
+
+.sorting-list-item:hover .sorting-popular {
+	color: #323232;
+	background-color: #ffffff;
+}
+
+.sorting-list-item:hover .icon-down path {
+	fill: #323232;
 }
 
 .sorting-text {

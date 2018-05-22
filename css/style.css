@@ -342,6 +342,7 @@ h2 {
 .phone {
 	font-size: 22px;
 	line-height: 24px;
+	text-decoration: none;
 }
 
 .icecream-image.second,
@@ -982,11 +983,12 @@ label.image:active {
 	font-size: 18px;
 	line-height: 24px;
 	color: #323232;
+	text-decoration: none;
 }
 
 .address-column {
 	background-color: #fdfefe;
-	max-width: 302px;
+	max-width: 309px;
 	border-radius: 15px;
 	padding: 32px 23px 30px 23px;
 	position: absolute;
@@ -1050,6 +1052,10 @@ label.image:active {
 
 .button-wrap.feedback {
 	margin-left: auto;
+}
+
+.googlemap {
+	position: absolute;
 }
 
 .modal-feedback {

@@ -96,9 +96,7 @@
 
 			<main class="container">
 				<ul class="sliders">
-					<li class="slider-item one">
-						<input class="slider-radio visually-hidden" type="radio" id="slider1" name="slider" checked>
-						<label class="image first" for="slider1"></label>
+					<li class="slider-item one active">
 						<img class="icecream-image" src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">	
 						<p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>	
 						<div class="button-wrap">
@@ -106,8 +104,6 @@
 						</div>						
 					</li>	
 					<li class="slider-item two">
-						<input class="slider-radio visually-hidden" type="radio" id="slider2" name="slider">
-						<label class="image second" for="slider2"></label>
 						<img class="icecream-image"	src="img/2_choco and lemon.png"	width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
 						<p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
 						<div class="button-wrap">
@@ -115,15 +111,18 @@
 						</div>	
 					</li>
 					<li class="slider-item three">
-						<input class="slider-radio visually-hidden" type="radio" id="slider3" name="slider">
-						<label class="image third" for="slider3"></label>
 						<img class="icecream-image" src="img/3_strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
 						<p class="slider-text">Пломбир с помадкой<br> и клубничный щербет</p>
 						<div class="button-wrap">
 							<a class="button-red button-choose" href="#">Давайте оба!</a>
 						</div>
 					</li>
-				</ul>			
+				</ul>	
+				<div class="radio-wrap">
+					<button class="radio-button one active" type="button"><span class="visually-hidden">1</span></button>
+					<button class="radio-button two" type="button"><span class="visually-hidden">2</span></button>
+					<button class="radio-button three" type="button"><span class="visually-hidden">3</span></button>
+				</div>		
 				<section class="bonus-section">
 					<h2 class="visually-hidden">Бонусы при покупке</h2>
 					<div class="bonuses bonus1">
@@ -291,7 +290,7 @@
 				</div>	
 			</footer>
 
-			<section class="modal modal-feedback">
+			<section class="modal-feedback">
 				<p class="visually-hidden">Форма обратной связи</p>
 				<b class="feedback-text">Мы обязательно вам ответим!</b>
 				<form class="feedback-form" name="feedback" action="https://echo.htmlacademy.ru" method="post">
@@ -310,6 +309,7 @@
 			</section>	
 			<div class="modal-overlay"></div> 
 		</div>
+		<script src="js/script.js"></script>	
 	</body>
 </html>
 

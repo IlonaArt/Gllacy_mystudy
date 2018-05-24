@@ -32,8 +32,16 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
-	background-color: #849d8f;
 	color: #ffffff;
+	background-color: #849d8f;
+}
+
+.switch2 {
+	background-color: #8996a6;
+}
+
+.switch3 {
+	background-color: #9d8b84;
 }
 
 img {
@@ -164,7 +172,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background-color: #b0c0b7;
+	background-color: rgba(255, 255, 255, 0.35);
 	width: 32px;
 	height: 32px;
 }
@@ -230,7 +238,7 @@ h2 {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: #b0c0b7;
+	background-color: rgba(255, 255, 255, 0.35);
 	border-radius: 30px;
 	width: 116px;
 	padding-left: 16px;
@@ -251,7 +259,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #b0c0b7;
+	background-color: rgba(255, 255, 255, 0.35);
 	border-radius: 30px;
 	width: 92px;
 	padding: 6px 16px 7px 16px;
@@ -370,6 +378,8 @@ h2 {
 	text-align: center;
 	text-decoration: underline;
 	text-decoration-color: #b0c0b7;
+	word-wrap: break-word;
+	z-index: 3;
 }
 
 .button-watch {
@@ -434,17 +444,30 @@ h2 {
 
 .suppliers {
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 16px;
 	font-weight: 700;
 	border-bottom: 1px solid #b0c0b7;
+	width: 112px;
+}
+
+.production {
+	width: 100px;
 }
 
 .production,
 .about-documents,
 .standarts {
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 16px;
 	border-bottom: 1px solid #b0c0b7;
+}
+
+.about-documents {
+	width: 108px;
+}
+
+.standarts {
+	width: 164px;
 }
 
 .footer-copyright {
@@ -459,7 +482,7 @@ h2 {
 }
 
 .made-in-underline {
-	text-decoration: underline;
+	border-bottom: 1px solid #b0c0b7;
 }
 
 .made-in-underline:hover {
@@ -475,6 +498,7 @@ h2 {
 	color: #000000;
 	border-radius: 30px;
 	background-color: #ffffff;
+	text-decoration: none;
 }
 
 .catalog:active {
@@ -491,16 +515,19 @@ h2 {
 	color: #000000;
 	border-radius: 30px;
 	background-color: #ffffff;
+	text-decoration: none;
 }
 
 .catalog {
 	position: relative;
-	padding: 3px 13px 6px 13px;
 }
 
+.catalog,
 .delivery,
 .company {
 	padding: 3px 13px 6px 13px;
+	text-decoration: underline;
+	text-decoration-color: #abc2b5;
 }
 
 .navigation-item:hover .catalog-list {
@@ -597,6 +624,7 @@ h2 {
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+	word-wrap: break-word;
 }
 
 .sliders {
@@ -628,7 +656,7 @@ h2 {
 }
 
 .radio-button {
-	background-color: #849d8f;
+	background-color: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: none;
@@ -803,6 +831,7 @@ h2 {
 	line-height: 30px;
 	font-weight: 600;
 	color: #323232;
+	word-wrap: break-word;
 }
 
 .main-features-item {
@@ -824,6 +853,7 @@ h2 {
 .main-features-text {
 	color: #323232;
 	padding-left: 58px;
+	word-wrap: break-word;
 }
 
 .feature1::before {
@@ -880,6 +910,8 @@ h2 {
 	font-weight: 600;
 	color: #323232;
 	display: block;
+	max-width: 280px;
+	word-wrap: break-word;
 }
 
 .news {
@@ -892,6 +924,7 @@ h2 {
 	max-width: 282px;
 	display: inline-block;
 	margin-top: 5px;
+	word-wrap: break-word;
 }
 
 .news-blog {
@@ -914,6 +947,7 @@ h2 {
 
 .subscribe {
 	color: #5a5a5a;
+	word-wrap: break-word;
 }
 
 .subscribe-form {
@@ -982,6 +1016,7 @@ h2 {
 	position: absolute;
 	right: 28px;
 	top: 63px;
+	word-wrap: break-word;
 }
 
 .modal-overlay {
@@ -1281,9 +1316,16 @@ nav.breadcrumbs {
 }
 
 .breadcrumbs-item .breadcrumbs.one,
- .breadcrumbs-item .breadcrumbs.two {
+.breadcrumbs-item .breadcrumbs.two {
 	text-decoration: underline;
 	text-decoration-color: #b0c0b7;
+}
+
+.breadcrumbs-item .breadcrumbs.one:hover,
+.breadcrumbs-item .breadcrumbs.two:hover,
+.breadcrumbs-item .breadcrumbs.three:hover {
+	text-decoration-color: #a7a294;
+	color: #ffbc9e;
 }
 
 .breadcrumbs-item {
@@ -1308,6 +1350,7 @@ nav.breadcrumbs {
 
 .product-text {
 	width: 218px;
+	word-wrap: break-word;
 }
 
 .product-cost.kg {
@@ -1368,6 +1411,7 @@ nav.breadcrumbs {
 	background-color: #ffffff;
 	width: 192px;
 	margin-top: 9px;
+	z-index: 12;
 }
 
 .popular-list-item {
@@ -1674,6 +1718,7 @@ input.checkbox:checked:disabled + label.stuff-label {
 .third-row-list {
 	display: flex;
 	padding: 0 12px;
+	flex-wrap: wrap;
 }
 
 .first-row-item img,

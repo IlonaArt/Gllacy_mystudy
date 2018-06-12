@@ -67,10 +67,8 @@
 										<input class="user-text enter-email" id="email" type="email" name="enter-email" placeholder="Электронная почта" required>
 										<label class="visually-hidden" for="password">Пароль</label>
 										<input class="user-text enter-password" id="password" type="password" name="password" placeholder="Пароль" required>
-										<div class="email-wrap1">
-											<div class="button-wrap">
-												<button class="button-red button-enter" type="submit" value="Войти">Войти</button>
-											</div>
+										<div class="email-wrap1">										
+											<button class="button-red button-enter" type="submit" value="Войти">Войти</button>
 											<div class="email-wrap2">	
 												<a class="lost-password blackref" href="#">Забыли пароль?</a><br>
 												<a class="new-registration blackref" href="#">Новая регистрация</a>
@@ -95,33 +93,35 @@
 			</header>	
 
 			<main class="container">
-				<ul class="sliders">
-					<li class="slider-item one active">
-						<img class="icecream-image" src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">	
-						<p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>	
-						<div class="button-wrap">
-							<a class="button-red button-choose" href="#">Давайте оба!</a>
-						</div>						
-					</li>	
-					<li class="slider-item two">
-						<img class="icecream-image"	src="img/2_choco and lemon.png"	width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
-						<p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
-						<div class="button-wrap">
-							<a class="button-red button-choose" href="#">Давайте оба!</a>
-						</div>	
-					</li>
-					<li class="slider-item three">
-						<img class="icecream-image" src="img/3_strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
-						<p class="slider-text">Пломбир с помадкой<br> и клубничный щербет</p>
-						<div class="button-wrap">
-							<a class="button-red button-choose" href="#">Давайте оба!</a>
-						</div>
-					</li>
-				</ul>	
-				<div class="radio-wrap">
-					<button class="radio-button one active" type="button"><span class="visually-hidden">1</span></button>
-					<button class="radio-button two" type="button"><span class="visually-hidden">2</span></button>
-					<button class="radio-button three" type="button"><span class="visually-hidden">3</span></button>
+				<div class="sliders-wrapper">
+					<ul class="sliders">
+						<li class="slider-item one active">
+							<img class="icecream-image" src="img/1_creme-brulee.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">	
+							<p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>	
+							<div class="button-wrap">
+								<a class="button-red button-choose" href="#">Давайте оба!</a>
+							</div>						
+						</li>	
+						<li class="slider-item two">
+							<img class="icecream-image"	src="img/2_choco and lemon.png"	width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+							<p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+							<div class="button-wrap">
+								<a class="button-red button-choose" href="#">Давайте оба!</a>
+							</div>	
+						</li>
+						<li class="slider-item three">
+							<img class="icecream-image" src="img/3_strawberry.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+							<p class="slider-text">Пломбир с помадкой<br> и клубничный щербет</p>
+							<div class="button-wrap">
+								<a class="button-red button-choose" href="#">Давайте оба!</a>
+							</div>
+						</li>
+					</ul>	
+					<div class="radio-wrap">
+						<button class="radio-button one active" type="button"><span class="visually-hidden">1</span></button>
+						<button class="radio-button two" type="button"><span class="visually-hidden">2</span></button>
+						<button class="radio-button three" type="button"><span class="visually-hidden">3</span></button>
+					</div>	
 				</div>		
 				<section class="bonus-section">
 					<h2 class="visually-hidden">Бонусы при покупке</h2>
@@ -145,9 +145,9 @@
 					<ul class="teaser-list">
 						<li class="teaser-item">
 							<img src="img/hit_creamy-citrus.jpg" width="267" height="267" alt="хит1">
-							<div class="cost-wrapper">
+							<p class="cost-wrapper">
 								<b class="cost">310	&#8381;<span class="cost-other"> /кг</span></b>
-							</div>	
+							</p>	
 							<a class="ice-cream-text whiteref" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							<div class="button-wrap">
 								<a class="button-red button-watch" href="#">Быстрый просмотр</a>
@@ -155,9 +155,9 @@
 						</li>
 						<li class="teaser-item">
 							<img src="img/hit_creamy-choc.jpg" width="267" height="267" alt="хит2">
-							<div class="cost-wrapper">
+							<p class="cost-wrapper">
 								<b class="cost">380	&#8381;<span class="cost-other"> /кг</span></b>
-							</div>
+							</p>
 							<a class="ice-cream-text whiteref" href="#">Сливочно-кофейное с кусочками шоколада</a>
 							<div class="button-wrap">
 								<a class="button-red button-watch" href="#">Быстрый просмотр</a>
@@ -165,9 +165,9 @@
 						</li>
 						<li class="teaser-item">
 							<img src="img/hit_creamy-strawberry.jpg" width="267" height="267" alt="хит3">
-							<div class="cost-wrapper">
+							<p class="cost-wrapper">
 								<b class="cost">355	&#8381;<span class="cost-other"> /кг</span></b>
-							</div>
+							</p>
 							<a class="ice-cream-text whiteref" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							<div class="button-wrap">
 								<a class="button-red button-watch" href="#">Быстрый просмотр</a>
@@ -175,9 +175,9 @@
 						</li>
 						<li class="teaser-item">
 							<img src="img/hit_creamy-caramel.jpg" width="267" height="267" alt="хит4">
-							<div class="cost-wrapper">
+							<p class="cost-wrapper">
 								<b class="cost">415	&#8381;<span class="cost-other"> /кг</span></b>
-							</div>
+							</p>
 							<a class="ice-cream-text whiteref" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 							<div class="button-wrap">
 								<a class="button-red button-watch" href="#">Быстрый просмотр</a>
@@ -217,9 +217,7 @@
 						<form class="subscribe-form" name="subscribe" action="#" method="post">
 							<label class="visually-hidden" for="subscribe-email">Электронная почта</label>
 							<input class="user-text email" type="email" id="subscribe-email" name="email" placeholder="Электронная почта" required>
-							<div class="button-wrap subscribe-wrap">
-								<button class="button-red button-submit" type="submit" value="Отправить">Отправить</button>
-							</div>	
+							<button class="button-red button-submit" type="submit" value="Отправить">Отправить</button>
 						</form>	
 					</div>
 				</div>		
@@ -235,9 +233,7 @@
 						<p class="address-text orders">Для заказов по телефону:</p>
 						<a class="phone-black"><b>8 812 450-25-25</b></a>
 						<p class="address-text hours">(с 10 до 20 ежедневно)</p>
-						<div class="button-wrap">
-							<button class="button-red button-feedback" type="button" value="Форма обратной связи">Форма обратной связи</button>
-						</div>
+						<button class="button-red button-feedback" type="button" value="Форма обратной связи">Форма обратной связи</button>
 					</div>											
 				</section>	
 			</main>	

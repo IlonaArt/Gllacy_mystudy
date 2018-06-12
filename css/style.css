@@ -386,9 +386,9 @@ h2 {
 
 .button-watch {
 	display: none;
-	max-width: 202px;
+	width: 202px;
+	text-align: center;
 	padding: 10px 16px;
-	margin-left: 30px;
 	border-radius: 20px;
 }
 
@@ -1736,7 +1736,8 @@ input.checkbox:checked:disabled + label.stuff-label {
 	position: absolute;
 	z-index: 1;
 	bottom: -25px;
-	left: 20px;
+	left: 50%;
+    transform: translateX(-50%);
 }
 
 

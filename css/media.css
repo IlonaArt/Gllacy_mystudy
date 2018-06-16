@@ -1,0 +1,15 @@
+@media (min-width: 900px) and (max-width: 1200px) {
+	.bonus1 {
+		margin-right: 2.2%
+	}
+
+	.bonuses {
+		max-width: 46.7%;
+		border-radius: 15px;
+	}
+
+	.bonus-wrap {
+		margin-top: 35px;
+	}
+
+}

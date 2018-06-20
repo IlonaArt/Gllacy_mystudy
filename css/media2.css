@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+
+	.table-text.two {
+    	padding-right: 28px;
+	}
+
+	.modal-close-table.image2::before, 
+	.modal-close-table.image2::after {
+		top: 19px;
+	}
+
+	.table-wrap {
+		padding: 26px 16px 23px 16px;
+	}
+}

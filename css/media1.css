@@ -1,0 +1,152 @@
+@media (max-width: 900px) {
+
+	.teaser-item img,
+	.first-row-item img,
+	.second-row-item img,
+	.third-row-item img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.teaser-list,
+	.first-row-list,
+	.second-row-list,
+	.third-row-list {
+	   	flex-wrap: nowrap;
+	}
+
+	.teaser-item,
+	.first-row-item,
+	.second-row-item,
+	.third-row-item {
+		height: 310px;
+	}
+
+	.teaser-item .button-wrap {
+		top: 295px;
+	}
+	
+	.ice-cream-text {
+		width: 85%;
+		top: 217px;
+	}
+
+	.cost-wrapper {
+		top: 156px;
+	}
+
+	.teaser-item:hover::after,
+	.first-row-item:hover::before,
+	.second-row-item:hover::before,
+	.third-row-item:hover::before {
+		width: 223px;
+    	height: 358px;
+	}
+
+	.main-features {
+		margin: 0 22px 40px 22px;
+	}
+
+	.news {
+		background: rgba(255, 255, 255, 0.7);
+		display: inline;
+		margin-right: 64px;
+	}
+
+	.news-blog {
+		margin-right: 20px;
+		background-position-x: -156px;
+	}
+
+	.user-text {
+		padding: 16px 14px;
+	}
+
+	.table-text.two {
+    	padding-right: 28px;
+	}
+
+	.modal-close-table.image2::before, 
+	.modal-close-table.image2::after {
+		top: 19px;
+	}
+
+	.table-wrap {
+		padding: 26px 16px 23px 16px;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+	.teaser-item img,
+	.first-row-item img,
+	.second-row-item img,
+	.third-row-item img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.bonus1 {
+		margin-right: 2.2%
+	}
+
+	.bonuses {
+		max-width: 46.7%;
+		border-radius: 15px;
+	}
+
+	.bonus-wrap {
+		margin-top: 35px;
+	}
+
+	.teaser-list {
+		flex-wrap: nowrap;
+	}
+
+	.main-features-item {
+		min-width: 401px;
+	}
+
+	.main-features-item.feature1,
+	.main-features-item.feature3 {
+		margin-right: 20px;
+	}
+
+	.feature4 {
+		min-width: 400px;
+	}
+
+	.news-blog,
+	.distribution-wrap {
+		max-width: 46.7%;
+	}
+	
+	.distribution {
+		padding: 26px 24px 36px 22px;
+	}
+
+	.whatsnew {
+		color: #5a5a5a;
+	}
+
+	.subscribe-form {
+		margin-top: 16px;
+	}
+
+	.production,
+	.standarts {
+		margin-top: 8px;
+	}
+
+	.main-footer {
+		padding: 0 22px;
+	}
+
+	.social-list {
+		padding: 42px 0 30px 0;
+	}
+
+	.footer-copyright {
+		padding-bottom: 12px;
+	}
+}
+

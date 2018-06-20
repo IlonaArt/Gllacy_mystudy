@@ -66,6 +66,7 @@ a.blackref:active {
 	max-width: 1200px;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
 
 .button-red{
@@ -162,6 +163,13 @@ h2 {
 	position: relative;
 }
 
+.search {
+	padding: 20px 15px 20px 15px;
+    margin-top: 5px;
+    background-color: rgb(248, 247, 244);
+    border-radius: 5px;
+}
+
 .search-background {
 	display: flex;
 	justify-content: center;
@@ -183,12 +191,8 @@ h2 {
 .search-form {
 	position: absolute;
 	display: none;
-    background-color: rgb(248, 247, 244);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  	border-radius: 5px;
   	width: 342px;
-  	padding: 20px 15px 20px 15px;
-  	margin-top: 5px;
   	right: 0;
 }
 
@@ -266,6 +270,7 @@ h2 {
 
 .enter-background:hover {
 	color: #323232;
+	background-color: #f8f7f4;
 }
 
 .search-image:hover,
@@ -420,7 +425,6 @@ h2 {
 
 .about-column {
 	display: flex;
-	max-width: 330px;
 }
 
 .about {
@@ -565,7 +569,7 @@ h2 {
 }
 
 .catalog-item {
-	padding: 12px 20px;
+	padding: 8px 20px;
 	cursor: pointer;
 }
 
@@ -825,7 +829,8 @@ h2 {
 .main-features {
 	background-image: url("../img/waffle.jpg");
 	background-repeat: no-repeat;
-	max-width: 1148px;
+	background-size: cover;
+	max-width: 100%;
 	background-color: #e9d9b9;
 	border-radius: 15px;
 	padding: 25px 22px 26px 22px;
@@ -916,7 +921,6 @@ h2 {
 	font-weight: 600;
 	color: #323232;
 	display: block;
-	max-width: 280px;
 	word-wrap: break-word;
 }
 
@@ -945,6 +949,7 @@ h2 {
 }
 
 .news-blog,
+.distribution-wrap,
 .distribution {
 	border-radius: 15px;
 }
@@ -956,17 +961,22 @@ h2 {
 
 .subscribe-form {
 	display: flex;
-	width: 562px;
+	max-width: 562px;
 	margin-top: 38px;
 }
 
-.distribution {
-	background-image: url("../img/post.jpg");
-	background-color: #ffffff;
-	background-size: cover;
-	background-repeat: no-repeat;
+.distribution-wrap {
+	display: flex;
 	max-width: 560px;
-	padding: 30px 24px 44px 24px;
+	padding: 6px;
+	background-image: url("../img/post.png");
+}
+
+.distribution {
+	background-color: #f8f7f4;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 24px 18px 38px 18px;
 }
 
 .email {
@@ -999,6 +1009,7 @@ h2 {
 
 .address-text.hours {
 	margin-top: 5px;
+	margin-bottom: 25px;
 }
 
 .address,
@@ -1011,11 +1022,11 @@ h2 {
 
 .address-column {
 	background-color: #fdfefe;
-	max-width: 309px;
+	max-width: 50%;
 	border-radius: 15px;
 	padding: 32px 23px 30px 23px;
 	position: absolute;
-	right: 28px;
+	right: 22px;
 	top: 63px;
 	word-wrap: break-word;
 }
@@ -1034,7 +1045,7 @@ h2 {
 
 .button-feedback {
 	padding: 10px 24px;
-	margin-top: 26px;
+	margin: 0 auto;
 }
 
 .user-text.feedback,
@@ -1090,8 +1101,8 @@ h2 {
 	background-repeat: repeat;
 	background-position: 0 0;
 	border-radius: 10px;
-	width: 477px;
-	padding: 20px 25px 25px;
+	max-width: 477px;
+	padding: 20px 25px 35px;
 
 	top: 338px;
 	left: 50%;
@@ -1155,12 +1166,6 @@ h2 {
 	z-index: 1;
 	right: 0;
 	width: 542px;
-	margin-top: 5px;
-	padding: 16px 16px 30px 16px;
-	background-color: #f8f7f4;
-	background-image: url("../img/pattern-light.jpg");
-	border-radius: 5px;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .first-product {
@@ -1234,7 +1239,6 @@ h2 {
 .table-text {
 	padding-top: 8px;
 }
- 
 
 .table-text.one {
 	padding-right: 26px;
@@ -1261,6 +1265,15 @@ h2 {
 	line-height: 18px;
 	color: #323232;
 } 
+
+.table-wrap {
+	margin-top: 5px;
+	padding: 16px 16px 30px 16px;
+	background-color: #f8f7f4;
+	background-image: url("../img/pattern-light.jpg");
+	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
 
 .recycle-table {
 	padding-left: 14px;
